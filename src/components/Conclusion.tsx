@@ -14,7 +14,7 @@ export function Conclusion() {
     return (
         <section id="ket-luan" className="conclusion-section">
             {/* Thớ giấy hữu cơ mịn */}
-            <div className="historical-grain" />
+            <div className="conclusion-grain" />
 
             <div style={{ maxWidth: 950, margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 10 }}>
                 {/* Header Eyebrow */}
@@ -111,7 +111,7 @@ export function Conclusion() {
                     font-family: 'Manrope', sans-serif;
                 }
 
-                .historical-grain {
+                .conclusion-grain {
                     position: absolute;
                     inset: 0;
                     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3 drain=%220.08%22%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");

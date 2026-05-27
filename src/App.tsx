@@ -155,7 +155,7 @@ export default function App() {
         className={`fixed left-0 right-0 h-1 bg-gold-accent origin-left z-[51] ${isPresenting ? 'top-0' : 'top-20'}`}
         style={{ scaleX: scrollYProgress }}
       />
-      <div className="historical-grain" />
+      <div className="app-historical-grain" />
       <div className="vignette" />
       <CustomCursor />
       {!isPresenting && <FloatingLotus />}

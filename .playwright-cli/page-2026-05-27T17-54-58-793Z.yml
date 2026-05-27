@@ -1,0 +1,320 @@
+- generic [ref=e3]:
+  - button [ref=e21]:
+    - img [ref=e24]
+  - navigation [ref=e28]:
+    - generic [ref=e30]:
+      - generic [ref=e32]: "DECODE: LIÊM CHÍNH"
+      - button "Đấu Trường Thanh Liêm" [ref=e34]:
+        - generic [ref=e36]:
+          - img [ref=e37]
+          - text: Đấu Trường Thanh Liêm
+  - main [ref=e43]:
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - heading "THAM NHŨNG KHÔNG BẮT ĐẦU TỪ NHỮNG VỤ ÁN LỚN." [level=1] [ref=e55]:
+          - text: THAM NHŨNG KHÔNG BẮT ĐẦU TỪ
+          - text: NHỮNG VỤ ÁN LỚN.
+        - paragraph [ref=e56]:
+          - text: Nó bắt đầu từ sự im lặng.
+          - text: Và lớn dần khi không ai dám nói ra sự thật.
+        - button "Bắt đầu hành trình" [ref=e58] [cursor=pointer]:
+          - generic [ref=e59]: Bắt đầu hành trình
+          - img [ref=e60]
+      - generic [ref=e63]:
+        - img "Tổng Bí thư Tô Lâm chủ trì phiên họp của Ban Chỉ đạo Trung ương về phòng, chống tham nhũng, tiêu cực" [ref=e64]
+        - generic [ref=e68]:
+          - generic [ref=e69]: "Ảnh:"
+          - link "noichinh.vn" [ref=e70] [cursor=pointer]:
+            - /url: https://noichinh.vn/cong-tac-phong-chong-tham-nhung/202507/dong-chi-tong-bi-thu-to-lam-tham-nhung-lang-phi-khong-chi-co-toi-ma-con-co-loi-rat-lon-voi-dang-nha-nuoc-va-nhan-dan-314824/
+    - generic [ref=e73]:
+      - generic [ref=e74]:
+        - generic [ref=e76]: Đặt Vấn Đề
+        - heading "Giặc Ở Trong Lòng" [level=2] [ref=e77]
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - img "Tượng đài Chủ tịch Hồ Chí Minh" [ref=e81]
+          - generic [ref=e82]: Ảnh minh họa được tạo bởi Gemini AI
+          - generic [ref=e83]:
+            - generic [ref=e84]:
+              - img [ref=e85]
+              - img [ref=e87]
+              - img [ref=e89]
+            - text: Tư Tưởng Cốt Lõi
+        - generic [ref=e91]:
+          - generic [ref=e92]:
+            - generic [ref=e93]: T
+            - text: rong tiến trình kiến thiết quốc gia, Chủ tịch Hồ Chí Minh luôn trăn trở về những nguy cơ làm suy yếu chế độ từ bên trong. Người sớm nhận diện tham nhũng không chỉ là hành vi tư lợi cá nhân đơn thuần, mà chính là một thứ "giặc nội xâm" vô cùng xảo quyệt và nguy hiểm, bắt nguồn sâu xa từ chủ nghĩa cá nhân.
+          - link "\"Tham ô, lãng phí và bệnh quan liêu là kẻ thù của nhân dân, của bộ đội và của Chính phủ. Nó là kẻ thù khá nguy hiểm, vì nó không mang gươm mang súng, mà nó nằm trong các tổ chức của ta, để làm hỏng công việc của ta... Nó là một thứ 'giặc ở trong lòng' - giặc nội xâm.\"" [ref=e94] [cursor=pointer]:
+            - /url: https://hochiminh.vn/tu-tuong-dao-duc-ho-chi-minh/nghien-cuu-tu-tuong-dao-duc-ho-chi-minh/phong-chong-tham-o-lang-phi-theo-mach-nguon-tu-tuong-ho-chi-minh-7250
+          - generic [ref=e95]: Nhìn lại lịch sử cách mạng nước ta, cuộc chiến chống giặc nội xâm luôn song hành cùng cuộc chiến chống ngoại xâm. Đấu tranh chống tham nhũng, lãng phí và bệnh quan liêu là điều kiện Tất Yếu để giữ gìn sự trong sạch, củng cố niềm tin tuyệt đối của nhân dân đối với Đảng và Chính phủ.
+          - generic [ref=e96]:
+            - paragraph [ref=e97]: Người lãnh đạo tối cao
+            - generic [ref=e98]: Hồ Chí Minh
+    - generic [ref=e101]:
+      - generic [ref=e102]:
+        - generic [ref=e104]: 5 Hệ Lụy Tàn Phá Của Tham Nhũng
+        - heading "Vết Thương Thời Đại" [level=2] [ref=e105]
+        - paragraph [ref=e106]: Tham nhũng không chỉ tàn phá nền kinh tế, mà còn ăn mòn tận gốc rễ của chế độ, làm đứt gãy niềm tin và đạo đức xã hội. Nhấn vào các thẻ bài dưới đây để lật mở từng hệ lụy cốt lõi.
+      - generic [ref=e107]:
+        - generic [ref=e109] [cursor=pointer]:
+          - generic [ref=e111]:
+            - generic [ref=e112]: "01"
+            - generic [ref=e114]: Bí Mật
+          - generic [ref=e117]:
+            - generic [ref=e118]:
+              - img [ref=e120]
+              - heading "Suy yếu Chính trị" [level=3] [ref=e122]
+            - paragraph [ref=e124]: Bất kỳ công chức, viên chức hay đảng viên nào tham nhũng đều là hành vi vi phạm Hiến pháp, vi phạm Điều lệ Đảng, đi ngược lại bản chất của chế độ.
+            - generic: "01"
+        - generic [ref=e126] [cursor=pointer]:
+          - generic [ref=e128]:
+            - generic [ref=e129]: "02"
+            - generic [ref=e131]: Bí Mật
+          - generic [ref=e134]:
+            - generic [ref=e135]:
+              - img [ref=e137]
+              - heading "Tàn phá Kinh tế" [level=3] [ref=e140]
+            - paragraph [ref=e142]: Tham nhũng làm cản trở, gây khó khăn cho các hoạt động quản lý, kìm hãm sự phát triển sản xuất, kinh doanh ở cả khu vực nhà nước và tư nhân, từ tầm vĩ mô đến vi mô.
+            - generic: "02"
+        - generic [ref=e144] [cursor=pointer]:
+          - generic [ref=e146]:
+            - generic [ref=e147]: "03"
+            - generic [ref=e149]: Bí Mật
+          - generic [ref=e152]:
+            - generic [ref=e153]:
+              - img [ref=e155]
+              - heading "Đứt gãy Xã hội" [level=3] [ref=e160]
+            - paragraph [ref=e162]: Trực tiếp làm gia tăng khoảng cách giàu - nghèo, khiến trật tự, kỷ cương và an ninh xã hội diễn biến phức tạp. Nó là hòn đá tảng cản trở mục tiêu xây dựng xã hội công bằng, dân chủ, văn minh.
+            - generic: "03"
+        - generic [ref=e164] [cursor=pointer]:
+          - generic [ref=e166]:
+            - generic [ref=e167]: "04"
+            - generic [ref=e169]: Bí Mật
+          - generic [ref=e172]:
+            - generic [ref=e173]:
+              - img [ref=e175]
+              - heading "Bào mòn Văn hóa" [level=3] [ref=e177]
+            - paragraph [ref=e179]: Tham nhũng làm suy đồi văn hóa xã hội, dựng lên rào cản ngăn chặn công cuộc cải cách tư pháp và xây dựng Nhà nước pháp quyền.
+            - generic: "04"
+        - generic [ref=e181] [cursor=pointer]:
+          - generic [ref=e183]:
+            - generic [ref=e184]: "05"
+            - generic [ref=e186]: Bí Mật
+          - generic [ref=e189]:
+            - generic [ref=e190]:
+              - img [ref=e192]
+              - heading "Bất chấp Đạo đức" [level=3] [ref=e195]
+            - paragraph [ref=e197]: Đây không chỉ là hành vi phạm pháp mà còn là sự bất nhân, bất nghĩa, bất tín, bất hiếu, bất trung. Nó chà đạp lên đạo đức cách mạng của người cán bộ trong một Nhà nước của nhân dân, do nhân dân, vì nhân dân.
+            - generic: "05"
+    - generic [ref=e199]:
+      - generic [ref=e200]:
+        - generic [ref=e201]: Hành Trình Lịch Sử
+        - heading "Quyết Tâm Diệt \"Giặc Nội Xâm\"" [level=2] [ref=e202]
+      - generic [ref=e203]:
+        - generic [ref=e204]:
+          - generic: GIAI ĐOẠN NHẬN DIỆN
+          - generic [ref=e205] [cursor=pointer]: "1950"
+          - generic [ref=e206] [cursor=pointer]: "1997"
+          - generic [ref=e207] [cursor=pointer]: "2012"
+          - generic [ref=e208] [cursor=pointer]: "2024"
+          - generic [ref=e209] [cursor=pointer]: "2017"
+        - generic [ref=e211]:
+          - generic: "1950"
+          - generic [ref=e212]:
+            - generic [ref=e213]:
+              - generic [ref=e214]:
+                - img "Đại Án Cục Quân Nhu" [ref=e215]
+                - img [ref=e218] [cursor=pointer]
+              - generic [ref=e220]: Ảnh minh họa được tạo bởi Gemini AI
+            - generic [ref=e221]:
+              - generic [ref=e222]: 05/09 1950 | Chiến khu Việt Bắc
+              - heading "Đại Án Cục Quân Nhu" [level=2] [ref=e223]
+              - generic [ref=e224]:
+                - paragraph [ref=e225]: Xét xử Cục trưởng Cục Quân nhu Trần Dụ Châu phạm tội tham ô quân nhu, quân trang và nhận hối lộ để sống xa hoa đồi trụy trong khi kháng chiến gian lao. Trước tính chất nghiêm trọng của vụ án, Chủ tịch Hồ Chí Minh thẳng thắn bác đơn xin ân xá, quyết định giữ nghiêm quân pháp kỷ cương để làm trong sạch quân đội.
+                - paragraph [ref=e226]: "\"Một cái ung nhọt, dẫu đau đớn cũng phải cắt bỏ để cứu cả cơ thể.\" - Chủ tịch Hồ Chí Minh"
+    - generic [ref=e230]:
+      - generic [ref=e231]:
+        - generic [ref=e233]: TRẬN TUYẾN KHÔNG TIẾNG SÚNG
+        - heading "Quyết Liệt Khẩn Cấp" [level=2] [ref=e234]
+        - generic [ref=e237]: ✦
+        - paragraph [ref=e239]: Đấu tranh chống "giặc nội xâm" là nhiệm vụ hệ trọng, cần kíp như cuộc chiến chống ngoại xâm. Mỗi ngày trôi qua đòi hỏi người cách mạng phải tự soi, tự sửa liên tục.
+      - generic [ref=e240]:
+        - generic [ref=e241]:
+          - generic [ref=e242]: ✦ ✦ ✦
+          - generic [ref=e243]:
+            - generic [ref=e244]:
+              - generic [ref=e245]: "23"
+              - generic [ref=e246]: Giờ
+            - generic [ref=e247]: ✦
+            - generic [ref=e248]:
+              - generic [ref=e249]: "05"
+              - generic [ref=e250]: Phút
+            - generic [ref=e251]: ✦
+            - generic [ref=e252]:
+              - generic [ref=e253]: "01"
+              - generic [ref=e254]: Giây
+          - generic [ref=e255]: Thời gian tự soi chiếu trong ngày
+          - generic [ref=e256]:
+            - paragraph [ref=e257]: "\"Một dân tộc biết cần, kiệm, liêm, chính là một dân tộc văn minh, tiến bộ.\""
+            - generic [ref=e258]: Chủ tịch Hồ Chí Minh
+        - generic [ref=e259]:
+          - generic [ref=e260]:
+            - generic [ref=e263]: I
+            - generic [ref=e264]:
+              - generic [ref=e265]: Đức tính hàng đầu
+              - heading "Xây dựng \"Cần, Kiệm, Liêm, Chính\"" [level=4] [ref=e266]
+              - paragraph [ref=e267]: Cán bộ cách mạng phải thực sự thấm nhuần đạo đức công vụ, giữ mình trong sạch, không tham danh tiếng hay địa vị để hết lòng phụng sự nhân dân.
+          - generic [ref=e268]:
+            - generic [ref=e271]: II
+            - generic [ref=e272]:
+              - generic [ref=e273]: Cội rễ của tệ nạn
+              - heading "Chống \"Chủ nghĩa cá nhân\"" [level=4] [ref=e274]
+              - paragraph [ref=e275]: Kiên quyết chống lại sự ích kỷ, cục bộ - nguồn gốc sâu xa đẻ ra các tệ quan liêu, tham ô, lãng phí và lạm quyền hại nước hại dân.
+          - generic [ref=e276]:
+            - generic [ref=e279]: III
+            - generic [ref=e280]:
+              - generic [ref=e281]: Tai mắt quần chúng
+              - heading "Sức mạnh giám sát của nhân dân" [level=4] [ref=e282]
+              - paragraph [ref=e283]: Đặt hàng triệu cặp mắt, lỗ tai cảnh giác của quần chúng nhân dân làm ngọn đèn pha rực sáng khắp nơi, khiến tệ tham nhũng không thể ẩn nấp.
+    - generic [ref=e286]:
+      - generic [ref=e287]:
+        - generic [ref=e289]: Quyền và Nghĩa Vụ Của Công Dân
+        - heading "Lá Chắn Nhân Dân" [level=2] [ref=e290]
+        - paragraph [ref=e291]: Sức mạnh lớn nhất để đẩy lùi tham nhũng nằm ở quần chúng. Mỗi công dân là một mắt xích, một lá chắn kiên cố bảo vệ sự trong sạch của bộ máy Nhà nước.
+      - generic [ref=e292]:
+        - generic [ref=e293]:
+          - generic [ref=e295]:
+            - generic [ref=e296]:
+              - heading "Thượng tôn pháp luật" [level=3] [ref=e297]
+              - paragraph [ref=e298]: Trách nhiệm tiên quyết của mọi công dân là phải chấp hành nghiêm chỉnh pháp luật về phòng, chống tham nhũng (Luật Phòng, chống tham nhũng 2018).
+            - img [ref=e300]
+          - generic [ref=e305]:
+            - generic [ref=e306]:
+              - heading "Quyền được bảo vệ" [level=3] [ref=e307]
+              - paragraph [ref=e308]: Pháp luật luôn bảo vệ tuyệt đối và khen thưởng những người dũng cảm tố cáo, chống lại sự đe dọa, trù dập. Công dân có nghĩa vụ hợp tác điều tra.
+            - img [ref=e310]
+        - generic [ref=e315] [cursor=pointer]:
+          - img [ref=e316]
+          - generic [ref=e319]: NHÂN DÂN
+        - generic [ref=e320]:
+          - generic [ref=e322]:
+            - img [ref=e324]
+            - generic [ref=e327]:
+              - heading "Tai mắt quần chúng" [level=3] [ref=e328]
+              - paragraph [ref=e329]: Công dân có quyền phát hiện, tố cáo và báo tin về hành vi tham nhũng. Tuy nhiên, việc phản ánh phải đảm bảo tính khách quan và trung thực.
+          - generic [ref=e331]:
+            - img [ref=e333]
+            - generic [ref=e336]:
+              - heading "Giám sát tối cao" [level=3] [ref=e337]
+              - paragraph [ref=e338]: Công dân có quyền thực hiện việc giám sát thông qua Ban thanh tra nhân dân tại cơ sở và kiến nghị với Nhà nước để hoàn thiện các quy định.
+    - generic [ref=e341]:
+      - generic [ref=e344]: Tổng Kết Bài Học
+      - heading "Kỷ Cương Vững Bền, Liêm Chính Kiến Quốc" [level=2] [ref=e346]
+      - generic [ref=e347]:
+        - generic [ref=e348]: Đ
+        - paragraph [ref=e349]: "ấu tranh phòng, chống tham nhũng, lãng phí không phải là việc giải quyết những sai sót cá nhân đơn thuần, mà chính là quy luật sinh tồn và phát triển nhằm bảo vệ chế độ dân chủ xã hội chủ nghĩa và xây dựng Nhà nước pháp quyền. Đúng như nội dung bài học từ Tiết 16 đã nhấn mạnh, tham nhũng gây ra những tác hại khôn lường: tàn phá nền kinh tế vĩ mô, gia tăng khoảng cách giàu nghèo trong xã hội, làm suy đồi văn hóa và vi phạm nghiêm trọng đạo đức cách mạng của người cán bộ vì dân."
+        - paragraph [ref=e350]: Để diệt trừ tận gốc thứ "giặc nội xâm" vô cùng xảo quyệt và nguy hiểm này, tư tưởng Hồ Chí Minh đã chỉ ra ngọn nguồn sức mạnh nằm ở quần chúng. Sức mạnh thanh tra, giám sát tối cao bắt nguồn từ hàng triệu cặp mắt và lỗ tai cảnh giác của nhân dân. Nhân dân chính là ngọn đèn pha rực sáng chiếu rọi khắp nơi, làm cho mọi tệ lạm quyền, tham ô, lãng phí đều không thể nào ẩn nấp được.
+        - generic [ref=e351]:
+          - paragraph [ref=e352]: "\"Nếu một người làm quan mà không Liêm, thì cũng như bức tượng gỗ quét sơn vàng, bên ngoài nhìn lộng lẫy nhưng bên trong rỗng tuếch.\""
+          - generic [ref=e353]: Chủ tịch Hồ Chí Minh
+        - paragraph [ref=e354]: "Đối chiếu với bài học Tiết 17, Trách nhiệm của công dân trong xã hội dân chủ không chỉ dừng lại ở việc chấp hành nghiêm chỉnh pháp luật. Mỗi người trẻ, mỗi sinh viên học tập lý luận chính trị cần nhận thức rõ quyền và nghĩa vụ của mình: chủ động phát hiện, báo tin khách quan, trung thực tố giác hành vi vụ lợi, và thực hiện quyền giám sát xã hội trực tiếp hoặc thông qua hoạt động của các *Ban thanh tra nhân dân* tại cơ sở. Liêm chính và trung thực phải được rèn luyện ngay từ giảng đường học đường."
+      - generic [ref=e355]:
+        - heading "Góc Nhìn Liêm Chính" [level=3] [ref=e356]
+        - paragraph [ref=e357]: Từ bài học lý luận về Dân chủ và Nhà nước pháp quyền xã hội chủ nghĩa, là một sinh viên học tập học phần Chủ nghĩa xã hội khoa học, hành động thực tế nhỏ nhất bạn sẽ thực hiện để xây dựng tính Liêm Chính và trung thực học thuật ngay hôm nay là gì?
+        - generic [ref=e358]:
+          - 'textbox "Nhập suy nghĩ hoặc hành động thực tế của bạn tại giảng đường (ví dụ: trung thực trong thi cử, bảo vệ lẽ phải, đấu tranh với gian lận...)..." [ref=e359]'
+          - button "Gửi Phản Hồi" [ref=e360] [cursor=pointer]
+  - contentinfo [ref=e361]:
+    - generic [ref=e362]:
+      - generic [ref=e363]:
+        - generic [ref=e364]:
+          - generic [ref=e365]:
+            - img [ref=e367]
+            - heading "Thanh Liêm & Chính Trực" [level=3] [ref=e369]
+          - paragraph [ref=e370]: Trang thông tin học tập, phân tích và làm rõ các khía cạnh về phòng, chống tham nhũng. Giáo dục đạo đức cách mạng, nâng cao nhận thức và trách nhiệm của công dân theo nội dung Tiết 16 và Tiết 17.
+        - generic [ref=e371]:
+          - heading "Điều Hướng" [level=3] [ref=e372]
+          - list [ref=e373]:
+            - listitem [ref=e374]:
+              - link "Mở Đầu" [ref=e375] [cursor=pointer]:
+                - /url: "#hero"
+                - img [ref=e376]
+                - text: Mở Đầu
+            - listitem [ref=e378]:
+              - link "Đặt Vấn Đề" [ref=e379] [cursor=pointer]:
+                - /url: "#gioi-thieu"
+                - img [ref=e380]
+                - text: Đặt Vấn Đề
+            - listitem [ref=e382]:
+              - link "Hậu Quả" [ref=e383] [cursor=pointer]:
+                - /url: "#hau-qua"
+                - img [ref=e384]
+                - text: Hậu Quả
+            - listitem [ref=e386]:
+              - link "Lịch Sử (Đại án)" [ref=e387] [cursor=pointer]:
+                - /url: "#lich-su"
+                - img [ref=e388]
+                - text: Lịch Sử (Đại án)
+            - listitem [ref=e390]:
+              - link "Trận Tuyến" [ref=e391] [cursor=pointer]:
+                - /url: "#thoi-co"
+                - img [ref=e392]
+                - text: Trận Tuyến
+            - listitem [ref=e394]:
+              - link "Trách Nhiệm" [ref=e395] [cursor=pointer]:
+                - /url: "#trach-nhiem"
+                - img [ref=e396]
+                - text: Trách Nhiệm
+            - listitem [ref=e398]:
+              - link "Tổng Kết" [ref=e399] [cursor=pointer]:
+                - /url: "#ket-luan"
+                - img [ref=e400]
+                - text: Tổng Kết
+        - generic [ref=e402]:
+          - heading "Tư Liệu" [level=3] [ref=e403]
+          - list [ref=e404]:
+            - listitem [ref=e405]:
+              - link "Tài Liệu Tiết 16" [ref=e406] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e407]
+                - text: Tài Liệu Tiết 16
+            - listitem [ref=e409]:
+              - link "Tài Liệu Tiết 17" [ref=e410] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e411]
+                - text: Tài Liệu Tiết 17
+            - listitem [ref=e413]:
+              - link "Luật Phòng, Chống Tham Nhũng" [ref=e414] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e415]
+                - text: Luật Phòng, Chống Tham Nhũng
+            - listitem [ref=e417]:
+              - link "Phóng Sự Thời Sự" [ref=e418] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e419]
+                - text: Phóng Sự Thời Sự
+        - generic [ref=e421]:
+          - heading "Liên Hệ" [level=3] [ref=e422]
+          - list [ref=e423]:
+            - listitem [ref=e424]:
+              - img [ref=e425]
+              - generic [ref=e428]: Hồ Chí Minh, Việt Nam
+            - listitem [ref=e429]:
+              - img [ref=e430]
+              - generic [ref=e433]: lienhe@lichsudang.vn
+            - listitem [ref=e434]:
+              - img [ref=e435]
+              - generic [ref=e437]: (+84) 1900 1945
+      - generic [ref=e439]:
+        - paragraph [ref=e440]: © 2026 Dự án Học tập Lý luận Chính trị. Tự hào truyền thống liêm chính.
+        - generic [ref=e441]:
+          - link "Chính Sách" [ref=e442] [cursor=pointer]:
+            - /url: "#"
+          - link "Điều Khoản" [ref=e443] [cursor=pointer]:
+            - /url: "#"
+          - link "Bảo Mật" [ref=e444] [cursor=pointer]:
+            - /url: "#"
+  - button [ref=e445] [cursor=pointer]:
+    - img [ref=e446]
+  - button "Kích hoạt Cố Vấn Thanh Liêm" [ref=e448] [cursor=pointer]:
+    - img [ref=e449]
