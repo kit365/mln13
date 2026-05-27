@@ -338,20 +338,20 @@ export function IntegrityQuiz({ onClose }: { onClose: () => void }) {
                             style={{ display: 'flex', gap: 40, flexDirection: 'row', flexWrap: 'wrap', marginTop: 30 }}
                         >
                             {/* Cột trái: Giới thiệu */}
-                            <div style={{ flex: '1 1 450px', background: '#1A1A1A', padding: '60px 40px', color: 'white', borderRadius: 4, display: 'flex', flexDirection: 'column', border: '1px solid #C9A227', boxShadow: '0 20px 40px rgba(0,0,0,0.15)' }}>
+                            <div style={{ flex: '1 1 450px', background: 'linear-gradient(145deg, #7B1F1F 0%, #9E3030 40%, #6B3020 100%)', padding: '60px 40px', color: 'white', borderRadius: 4, display: 'flex', flexDirection: 'column', border: '1px solid #C9A227', boxShadow: '0 20px 40px rgba(139,35,35,0.25)' }}>
                                 <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, marginBottom: 20 }}>
                                     <Star size={16} color="#C9A227" fill="#C9A227" />
-                                    <span style={{ fontSize: '11px', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#C9A227', fontWeight: 800 }}>Hành Trình Liêm Chính</span>
+                                    <span style={{ fontSize: '11px', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#C9A227', fontWeight: 800 }}>Ôn Tập &amp; Kiểm Tra Kiến Thức</span>
                                 </div>
-                                <h2 className="quiz-title" style={{ fontSize: '2.5rem', color: '#C9A227', lineHeight: 1.2, margin: '0 0 24px 0' }}>Đấu Trường<br />Thanh Liêm</h2>
+                                <h2 className="quiz-title" style={{ fontSize: '2.5rem', color: '#F5D98B', lineHeight: 1.2, margin: '0 0 24px 0' }}>Đấu Trường<br />Thanh Liêm</h2>
                                 
                                 <blockquote className="classic-text" style={{ fontSize: '1.05rem', lineHeight: 1.8, color: 'rgba(255,255,255,0.8)', borderLeft: '3px solid #8B2323', paddingLeft: 20, margin: '0 0 30px 0', fontStyle: 'italic' }}>
                                     “Tham ô, lãng phí và bệnh quan liêu là kẻ thù của nhân dân, của bộ đội và của Chính phủ... Nó là giặc nội xâm.”
-                                    <cite style={{ display: 'block', fontSize: '0.8rem', color: '#C9A227', marginTop: 10, fontStyle: 'normal', fontWeight: 700, letterSpacing: '1px' }}>— CHỦ TỊCH HỒ CHÍ MINH</cite>
+                                    <cite style={{ display: 'block', fontSize: '0.8rem', color: '#F5D98B', marginTop: 10, fontStyle: 'normal', fontWeight: 700, letterSpacing: '1px' }}>— CHỦ TỊCH HỒ CHÍ MINH</cite>
                                 </blockquote>
 
                                 <p style={{ fontSize: '0.9rem', lineHeight: 1.7, color: 'rgba(255,255,255,0.6)', margin: '0 0 40px 0' }}>
-                                    Nhà nước pháp quyền xã hội chủ nghĩa đòi hỏi mỗi công dân phải xây dựng lối sống liêm khiết, trung thực, có tri thức pháp luật vững chắc. Hãy chứng minh sự am tường và ý thức trách nhiệm công dân của bạn qua bài trắc nghiệm nhanh gồm 10 câu hỏi cốt lõi này!
+                                    Bộ câu hỏi ôn tập về nội dung <strong>Phòng, Chống Tham Nhũng</strong> (Tiết 16 &amp; 17) — giúp bạn củng cố kiến thức, tra cứu điều luật và tự đánh giá mức độ nắm bài trước kỳ thi. Mỗi câu đều có giải thích và dẫn nguồn cụ thể.
                                 </p>
 
                                 <button
@@ -378,13 +378,13 @@ export function IntegrityQuiz({ onClose }: { onClose: () => void }) {
                                     onMouseEnter={(e) => e.currentTarget.style.background = '#A52A2A'}
                                     onMouseLeave={(e) => e.currentTarget.style.background = '#8B2323'}
                                 >
-                                    BẮT ĐẦU THỬ THÁCH <ArrowRight size={18} />
+                                    BẮT ĐẦU ÔN TẬP <ArrowRight size={18} />
                                 </button>
                             </div>
 
                             {/* Cột phải: Luật chơi & Thông tin */}
                             <div style={{ flex: '1 1 500px', background: 'white', padding: '50px 40px', borderRadius: 4, border: '1px solid rgba(139, 35, 35, 0.1)', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                                <h3 className="quiz-title" style={{ fontSize: '1.6rem', color: '#1A1A1A', marginBottom: 24, borderBottom: '2px solid #F4F1EA', paddingBottom: 15 }}>Cấu Trúc Đấu Trường</h3>
+                                <h3 className="quiz-title" style={{ fontSize: '1.6rem', color: '#1A1A1A', marginBottom: 24, borderBottom: '2px solid #F4F1EA', paddingBottom: 15 }}>Bộ Đề Ôn Tập Gồm</h3>
                                 
                                 <div style={{ display: 'grid', gap: 24 }}>
                                     <div style={{ display: 'flex', gap: 16 }}>
@@ -392,8 +392,8 @@ export function IntegrityQuiz({ onClose }: { onClose: () => void }) {
                                             <BookOpen size={20} color="#8B2323" />
                                         </div>
                                         <div>
-                                            <h4 style={{ margin: '0 0 6px 0', fontSize: '1rem', color: '#1A1A1A', fontWeight: 700 }}>10 Câu Hỏi Thực Tế</h4>
-                                            <p style={{ margin: 0, fontSize: '0.85rem', color: '#666', lineHeight: 1.5 }}>Nội dung xây dựng dựa trên Chuyên đề Phòng, Chống Tham Nhũng & Đạo Đức Liêm Chính của Công Dân.</p>
+                                            <h4 style={{ margin: '0 0 6px 0', fontSize: '1rem', color: '#1A1A1A', fontWeight: 700 }}>10 Câu Hỏi Ôn Tập Có Nguồn</h4>
+                                            <p style={{ margin: 0, fontSize: '0.85rem', color: '#666', lineHeight: 1.5 }}>Bám sát Luật PCTN và bài giảng Tiết 16 & 17. Mỗi đáp án đều có thể Ctrl+F kiểm chứng trực tiếp trên nguồn gốc.</p>
                                         </div>
                                     </div>
 
@@ -402,8 +402,8 @@ export function IntegrityQuiz({ onClose }: { onClose: () => void }) {
                                             <Sparkles size={20} color="#C9A227" />
                                         </div>
                                         <div>
-                                            <h4 style={{ margin: '0 0 6px 0', fontSize: '1rem', color: '#1A1A1A', fontWeight: 700 }}>Giải Thích Minh Bạch</h4>
-                                            <p style={{ margin: 0, fontSize: '0.85rem', color: '#666', lineHeight: 1.5 }}>Nhận ngay đáp án phân tích và số Slide cụ thể ngay sau khi hoàn tất mỗi lựa chọn.</p>
+                                            <h4 style={{ margin: '0 0 6px 0', fontSize: '1rem', color: '#1A1A1A', fontWeight: 700 }}>Giải Thích + Dẫn Nguồn Ngay Lập Tức</h4>
+                                            <p style={{ margin: 0, fontSize: '0.85rem', color: '#666', lineHeight: 1.5 }}>Sau mỗi câu, nhận ngay phần giải thích chi tiết kèm đường dẫn tới điều luật hoặc slide gốc.</p>
                                         </div>
                                     </div>
 
@@ -412,7 +412,7 @@ export function IntegrityQuiz({ onClose }: { onClose: () => void }) {
                                             <Award size={20} color="#2D4A3E" />
                                         </div>
                                         <div>
-                                            <h4 style={{ margin: '0 0 6px 0', fontSize: '1rem', color: '#1A1A1A', fontWeight: 700 }}>Giấy Chứng Nhận Thanh Liêm</h4>
+                                            <h4 style={{ margin: '0 0 6px 0', fontSize: '1rem', color: '#1A1A1A', fontWeight: 700 }}>Bằng Khích Lệ Cuối Bài</h4>
                                             <p style={{ margin: 0, fontSize: '0.85rem', color: '#666', lineHeight: 1.5 }}>Vượt qua thử thách với điểm số cao để nhận Bằng danh dự “Hiệp sĩ Liêm chính” hoặc “Cố vấn Thượng hạng”.</p>
                                         </div>
                                     </div>
@@ -581,7 +581,7 @@ export function IntegrityQuiz({ onClose }: { onClose: () => void }) {
                                                 style={{
                                                     marginTop: 30,
                                                     padding: '16px',
-                                                    background: '#1A1A1A',
+                                                    background: '#8B2323',
                                                     color: 'white',
                                                     border: 'none',
                                                     borderRadius: 2,
@@ -596,8 +596,8 @@ export function IntegrityQuiz({ onClose }: { onClose: () => void }) {
                                                     fontFamily: "'Playfair Display', serif",
                                                     letterSpacing: '1px'
                                                 }}
-                                                onMouseEnter={(e) => e.currentTarget.style.background = '#8B2323'}
-                                                onMouseLeave={(e) => e.currentTarget.style.background = '#1A1A1A'}
+                                                onMouseEnter={(e) => e.currentTarget.style.background = '#A52A2A'}
+                                                onMouseLeave={(e) => e.currentTarget.style.background = '#8B2323'}
                                             >
                                                 {currentIndex < quizData.length - 1 ? 'CÂU TIẾP THEO' : 'XEM KẾT QUẢ'} <ArrowRight size={16} />
                                             </button>
@@ -709,6 +709,7 @@ export function IntegrityQuiz({ onClose }: { onClose: () => void }) {
 
                             {/* Giấy Chứng Nhận Thanh Liêm */}
                             {score >= 5 ? (
+                                <>
                                 <div className="print-area" style={{
                                     width: '100%',
                                     maxWidth: 800,
@@ -779,6 +780,11 @@ export function IntegrityQuiz({ onClose }: { onClose: () => void }) {
                                         LIÊM
                                     </div>
                                 </div>
+
+                            <p className="no-print" style={{ fontSize: '0.78rem', color: '#aaa', fontStyle: 'italic', textAlign: 'center', margin: '12px auto 60px', maxWidth: 560, lineHeight: 1.7 }}>
+                                ⚠️ Bằng này chỉ mang tính khích lệ tinh thần học tập, không có giá trị pháp lý, học bạ hay bất kỳ hiệu lực chính thức nào.
+                            </p>
+                            </>
                             ) : (
                                 <div style={{
                                     width: '100%',
