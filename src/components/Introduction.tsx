@@ -5,7 +5,7 @@ import tuongDaiImg from '../picture/intropic.png';
 // --- STYLES ---
 const IntroStyles = () => (
   <style>{`
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&:wght@400;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;500;600&family=Great+Vibes&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
     :root {
       --primary: #8B2323;
@@ -36,7 +36,7 @@ const IntroStyles = () => (
       font-size: 30rem;
       font-weight: 900;
       color: rgba(139, 35, 35, 0.03);
-      line-height: 1;
+      line-height: 1.12;
       pointer-events: none;
       user-select: none;
       z-index: 0;
@@ -74,12 +74,12 @@ const IntroStyles = () => (
     .drop-cap {
       float: left;
       font-family: 'Playfair Display', serif;
-      font-size: 6rem;
-      line-height: 0.7;
+      font-size: 5rem;
+      line-height: 0.9;
       font-weight: 700;
       color: var(--primary);
-      padding-right: 1.2rem;
-      padding-top: 0.8rem;
+      padding-right: 0.9rem;
+      padding-top: 0.45rem;
     }
 
     .highlight-text {
@@ -102,6 +102,66 @@ const IntroStyles = () => (
       transform: rotate(-3deg);
       opacity: 0.9;
     }
+
+    .quote-card-interactive {
+      position: relative;
+      text-decoration: none;
+      display: block;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border-radius: 0 8px 8px 0;
+    }
+    
+    .quote-card-interactive:hover {
+      background: rgba(201, 162, 39, 0.06);
+      border-left-color: var(--accent) !important;
+      transform: translateX(6px);
+    }
+    
+    .quote-tooltip {
+      position: absolute;
+      left: 2rem;
+      bottom: 105%;
+      background: #2D1A1A;
+      border: 1px solid rgba(201, 162, 39, 0.4);
+      color: #fff;
+      padding: 12px 16px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      line-height: 1.45;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+      z-index: 50;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      pointer-events: none;
+      width: max-content;
+      max-width: 340px;
+    }
+    
+    .quote-card-interactive:hover .quote-tooltip {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(-8px);
+    }
+
+    @media (max-width: 640px) {
+      .intro-section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+      }
+
+      .intro-text {
+        font-size: 1rem;
+        line-height: 1.8;
+        text-align: left;
+      }
+
+      .drop-cap {
+        font-size: 4rem;
+        line-height: 0.95;
+        padding-right: 0.65rem;
+      }
+    }
   `}</style>
 );
 
@@ -110,8 +170,6 @@ export function Introduction() {
     <>
       <IntroStyles />
       <section id="gioi-thieu" className="intro-section">
-        <div className="bg-number-decor">01</div>
-
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
           <div className="text-center mb-28">
@@ -122,8 +180,8 @@ export function Introduction() {
               </span>
               <div className="w-20 h-px bg-[#C9A227]"></div>
             </div>
-            <h2 className="text-5xl md:text-7xl font-bold text-[#1A1A1A] mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
-              Ăn May Hay Tất Yếu?
+            <h2 className="text-4xl leading-[1.18] sm:text-5xl md:text-6xl font-bold text-[#1A1A1A] mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
+              Giặc Ở Trong Lòng
             </h2>
           </div>
 
@@ -146,7 +204,7 @@ export function Introduction() {
                   <Star className="w-5 h-5 fill-current" />
                 </div>
                 <span className="text-xs tracking-[0.4em] uppercase text-[#8B2323] font-black opacity-60">
-                  Phân Tích Lịch Sử
+                  Tư Tưởng Cốt Lõi
                 </span>
               </div>
             </div>
@@ -154,16 +212,30 @@ export function Introduction() {
             {/* CỘT TEXT */}
             <div className="lg:col-span-7 space-y-10 pt-4">
               <div className="intro-text">
-                <span className="drop-cap">"C</span>
-                ách mạng Tháng Tám năm 1945 là một trong những trang sử chói lọi nhất của dân tộc Việt Nam. Tuy nhiên, có một số quan điểm cho rằng sự kiện này thành công chỉ đơn thuần là do <span className="highlight-text">"sự ăn may"</span> khi phát xít Nhật đầu hàng Đồng minh, tạo ra "khoảng trống quyền lực".
+                <span className="drop-cap">T</span>
+                rong tiến trình kiến thiết quốc gia, Chủ tịch Hồ Chí Minh luôn trăn trở về những nguy cơ làm suy yếu chế độ từ bên trong. Người sớm nhận diện tham nhũng không chỉ là hành vi tư lợi cá nhân đơn thuần, mà chính là một thứ <span className="highlight-text">"giặc nội xâm"</span> vô cùng xảo quyệt và nguy hiểm, bắt nguồn sâu xa từ chủ nghĩa cá nhân.
               </div>
 
-              <div className="intro-text border-l-4 border-[#C9A227]/30 pl-8 py-2">
-                Thực chất, cơ hội ngàn năm có một đó tuy là một yếu tố khách quan vô cùng thuận lợi, nhưng <span className="italic text-[#8B2323] font-semibold">nếu không có sự lãnh đạo sáng suốt, chuẩn bị chu đáo và tinh thần chủ động chớp thời cơ của Đảng Cộng sản Đông Dương</span>, cơ hội đó đã vụt mất vào tay các thế lực khác.
-              </div>
+              <a
+                href="https://hochiminh.vn/tu-tuong-dao-duc-ho-chi-minh/nghien-cuu-tu-tuong-dao-duc-ho-chi-minh/phong-chong-tham-o-lang-phi-theo-mach-nguon-tu-tuong-ho-chi-minh-7250"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="quote-card-interactive intro-text border-l-4 border-[#C9A227]/30 pl-8 py-3"
+              >
+                <span className="italic text-[#8B2323] font-semibold block">
+                  "Tham ô, lãng phí và bệnh quan liêu là kẻ thù của nhân dân, của bộ đội và của Chính phủ. Nó là kẻ thù khá nguy hiểm, vì nó không mang gươm mang súng, mà nó nằm trong các tổ chức của ta, để làm hỏng công việc của ta... Nó là một thứ 'giặc ở trong lòng' - giặc nội xâm."
+                </span>
+                
+                {/* Custom Tooltip */}
+                <div className="quote-tooltip">
+                  <div style={{ color: '#C9A227', fontWeight: 800, fontSize: '0.85rem', marginBottom: 4 }}>📖 NGUỒN TRÍCH DẪN CHÍNH THỨC:</div>
+                  <div style={{ color: '#E5E5E5', fontWeight: 500, marginBottom: 6 }}>Tác phẩm "Thực hành tiết kiệm, chống tham ô, lãng phí, chống bệnh quan liêu" (Tháng 5/1952)</div>
+                  <div style={{ color: '#C9A227', fontSize: '0.72rem', fontStyle: 'italic', fontWeight: 600 }}>🌐 Nhấn để xem tư liệu tại Trang thông tin điện tử Hồ Chí Minh ↗</div>
+                </div>
+              </a>
 
               <div className="intro-text">
-                Nhìn lại lịch sử 15 năm trước cuộc khởi nghĩa, chúng ta thấy rõ một quá trình chuẩn bị không mệt mỏi về đường lối lãnh đạo, phát triển lực lượng vũ trang và xây dựng căn cứ địa. Chiến thắng mùa Thu năm ấy là kết quả <span className="text-[#1A1A1A] font-bold italic">Tất Yếu</span> của lòng yêu nước được tập hợp đúng lúc, đúng chỗ.
+                Nhìn lại lịch sử cách mạng nước ta, cuộc chiến chống giặc nội xâm luôn song hành cùng cuộc chiến chống ngoại xâm. Đấu tranh chống tham nhũng, lãng phí và bệnh quan liêu là điều kiện <span className="text-[#1A1A1A] font-bold italic">Tất Yếu</span> để giữ gìn sự trong sạch, củng cố niềm tin tuyệt đối của nhân dân đối với Đảng và Chính phủ.
               </div>
 
               <div className="signature-area">

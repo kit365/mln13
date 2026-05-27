@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 html,
 body,
@@ -94,7 +94,7 @@ body,
 
   :root,
   :host {
-    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --color-orange-50: oklch(.98 .016 73.684);
     --color-orange-500: oklch(.705 .213 47.604);
@@ -210,8 +210,7 @@ body,
 
   html,
   :host {
-    /* Responsive base font size - scales from 14px at 320px to 18px at 1920px */
-    font-size: clamp(14px, 0.875rem + 0.25vw, 18px);
+    font-size: 16px;
     -webkit-text-size-adjust: 100%;
     tab-size: 4;
     line-height: 1.5;

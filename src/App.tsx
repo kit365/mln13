@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ChevronRight } from 'lucide-react';
+import { ChevronDown, ChevronRight, ChevronUp, Minimize2 } from 'lucide-react';
 import { motion, useScroll } from 'framer-motion';
 import { Hero } from './components/Hero';
 import { Introduction } from './components/Introduction';
@@ -12,11 +12,14 @@ import { CustomCursor } from './components/CustomCursor';
 import { Archive } from './components/Archive';
 import { ImageGallery } from './components/ImageGallery';
 import { Soundscape } from './components/Soundscape';
+import { IntegrityChatbot } from './components/IntegrityChatbot';
 
 export default function App() {
   const [showArchive, setShowArchive] = useState(false);
   const [showGallery, setShowGallery] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
+  const [isPresenting, setIsPresenting] = useState(false);
+  const [presentationIndex, setPresentationIndex] = useState(0);
 
   const { scrollYProgress } = useScroll();
 
@@ -62,35 +65,96 @@ export default function App() {
     return <ImageGallery onClose={() => setShowGallery(false)} />;
   }
 
-  const scrollToSection = (id: string) => {
+  const scrollToSection = (id: string, behavior: ScrollBehavior = 'smooth') => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const top = element.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top, behavior });
     }
   };
 
   const navItems = [
     { id: 'hero', label: 'Mở Đầu' },
-    { id: 'gioi-thieu', label: 'Lời Đồn' },
-    { id: 'lich-su', label: 'Khái Quát' },
-    { id: 'thoi-co', label: 'Thời Cơ' },
+    { id: 'gioi-thieu', label: 'Đặt Vấn Đề' },
+    { id: 'lich-su', label: 'Lịch Sử' },
+    { id: 'thoi-co', label: 'Trận Tuyến' },
     { id: 'ket-luan', label: 'Tổng Kết' },
   ];
+
+  const presentationSlides = [
+    <Hero isPresenting />,
+    <Introduction />,
+    <Timeline />,
+    <GoldenOpportunity />,
+    <Conclusion />,
+  ];
+
+  const goToSlide = (index: number) => {
+    const nextIndex = Math.max(0, Math.min(index, navItems.length - 1));
+
+    if (isPresenting) {
+      setPresentationIndex(nextIndex);
+      return;
+    }
+
+    scrollToSection(navItems[nextIndex].id);
+  };
+
+  const exitPresentation = async () => {
+    setIsPresenting(false);
+    if (document.fullscreenElement) {
+      await document.exitFullscreen?.();
+    }
+  };
+
+  useEffect(() => {
+    const startPresentation = () => {
+      setPresentationIndex(0);
+      setIsPresenting(true);
+      window.scrollTo({ top: 0, behavior: 'auto' });
+    };
+
+    window.addEventListener('start-presentation', startPresentation);
+    return () => window.removeEventListener('start-presentation', startPresentation);
+  }, []);
+
+  useEffect(() => {
+    if (!isPresenting) return;
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'ArrowRight' || event.key === ' ') {
+        event.preventDefault();
+        setPresentationIndex((current) => Math.min(current + 1, navItems.length - 1));
+      }
+
+      if (event.key === 'ArrowLeft') {
+        event.preventDefault();
+        setPresentationIndex((current) => Math.max(current - 1, 0));
+      }
+
+      if (event.key === 'Escape') {
+        void exitPresentation();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isPresenting]);
 
   return (
     <div className="min-h-screen bg-[#F5F0E8] overflow-x-hidden">
       <motion.div
-        className="fixed top-20 left-0 right-0 h-1 bg-gold-accent origin-left z-[51]"
+        className={`fixed left-0 right-0 h-1 bg-gold-accent origin-left z-[51] ${isPresenting ? 'top-0' : 'top-20'}`}
         style={{ scaleX: scrollYProgress }}
       />
       <div className="historical-grain" />
       <div className="vignette" />
       <CustomCursor />
-      <FloatingLotus />
+      {!isPresenting && <FloatingLotus />}
       <Soundscape />
 
       {/* Navigation */}
-      <nav style={{
+      {!isPresenting && <nav style={{
         position: 'fixed',
         top: 0,
         left: 0,
@@ -116,64 +180,74 @@ export default function App() {
                 className="group relative px-6 py-3 rounded-md bg-white/10 hover:bg-white/20 border border-white/30 transition-all duration-300 outline-none flex items-center justify-center overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:animate-[shimmer_1.5s_infinite]" />
-                <span className="relative z-10 text-[14px] sm:text-[15px] text-white tracking-[0.1em] uppercase font-bold transition-transform duration-300 group-hover:scale-105" style={{ fontFamily: "'Playfair Display', serif" }}>
+                <span className="relative z-10 text-[14px] sm:text-[15px] text-white tracking-[0.04em] uppercase font-bold transition-transform duration-300 group-hover:scale-105" style={{ fontFamily: "'Manrope', sans-serif" }}>
                   Kho Tư Liệu
                 </span>
               </button>
             </div>
           </div>
         </div>
-      </nav>
+      </nav>}
 
-      {/* Timeline Nav Menu (Fixed Layout) */}
-      <div
-        className="fixed top-1/2 -translate-y-1/2 flex flex-col items-end mix-blend-difference pointer-events-auto"
-        style={{ right: '16px', zIndex: 99999 }}
-      >
-        <div className="relative flex flex-col gap-8 sm:gap-12 items-end">
-          {/* Continuous Line Behind Dots */}
-          <div className="absolute top-2 bottom-2 right-[3px] w-[2px] bg-white/30 pointer-events-none" />
 
-          {navItems.map((item) => (
-            <button
-              key={item.id}
-              onClick={() => scrollToSection(item.id)}
-              className="group relative flex flex-row items-center justify-end gap-3 outline-none cursor-pointer hover:bg-transparent"
-              aria-label={item.label}
-              style={{ padding: '4px 0', border: 'none', background: 'transparent' }}
-            >
-              {/* Timeline Label - White with mix-blend-difference */}
-              <span
-                className={`font-sans text-xs sm:text-sm tracking-widest uppercase transition-all duration-300 whitespace-nowrap 
-                  ${activeSection === item.id ? 'text-white font-bold scale-110' : 'text-white/40 group-hover:text-white/80'}
-                `}
-              >
-                {item.label}
-              </span>
 
-              {/* The Dot Indicator */}
-              <div
-                className={`w-2 h-2 rounded-full transition-all duration-300 relative z-10 
-                  ${activeSection === item.id ? 'bg-white scale-[1.8] shadow-[0_0_10px_rgba(255,255,255,0.8)]' : 'bg-white/30 group-hover:bg-white/60'}
-                `}
-              />
-            </button>
-          ))}
+      {isPresenting && (
+        <div
+          className="fixed bottom-6 left-1/2 flex -translate-x-1/2 items-center gap-3 rounded-full border border-white/20 bg-black/45 px-4 py-3 text-white shadow-[0_18px_45px_rgba(0,0,0,0.28)] backdrop-blur-md"
+          style={{ zIndex: 2147483647, pointerEvents: 'auto' }}
+        >
+          <button
+            onClick={() => goToSlide(presentationIndex - 1)}
+            disabled={presentationIndex === 0}
+            className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-white/20 disabled:cursor-not-allowed disabled:opacity-35"
+            aria-label="Slide trước"
+          >
+            <ChevronUp className="h-5 w-5" />
+          </button>
+
+          <div className="min-w-28 text-center text-sm font-bold tracking-[0.04em]" style={{ fontFamily: "'Manrope', sans-serif" }}>
+            {presentationIndex + 1} / {navItems.length}
+          </div>
+
+          <button
+            onClick={() => goToSlide(presentationIndex + 1)}
+            disabled={presentationIndex === navItems.length - 1}
+            className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-white/20 disabled:cursor-not-allowed disabled:opacity-35"
+            aria-label="Slide tiếp theo"
+          >
+            <ChevronDown className="h-5 w-5" />
+          </button>
+
+          <button
+            onClick={() => void exitPresentation()}
+            className="ml-1 flex h-9 w-9 items-center justify-center rounded-full bg-[#F4D06F] text-[#1A1A1A] transition hover:bg-[#FFE18A]"
+            aria-label="Thoát trình chiếu"
+          >
+            <Minimize2 className="h-4 w-4" />
+          </button>
         </div>
-      </div>
+      )}
 
       {/* Main Content */}
-      <main className="pt-20">
-        <div id="hero"><Hero /></div>
-        <div id="gioi-thieu"><Introduction /></div>
-        <div id="lich-su"><Timeline /></div>
-        <div id="thoi-co"><GoldenOpportunity /></div>
-        <div id="ket-luan"><Conclusion /></div>
+      <main className={isPresenting ? 'pt-0' : 'pt-20'}>
+        {isPresenting ? (
+          <div className="min-h-screen overflow-hidden">
+            {presentationSlides[presentationIndex]}
+          </div>
+        ) : (
+          <>
+            <div id="hero"><Hero /></div>
+            <div id="gioi-thieu"><Introduction /></div>
+            <div id="lich-su"><Timeline /></div>
+            <div id="thoi-co"><GoldenOpportunity /></div>
+            <div id="ket-luan"><Conclusion /></div>
+          </>
+        )}
       </main>
-      <Footer />
+      {!isPresenting && <Footer />}
 
       {/* Back to Top Button */}
-      <button
+      {!isPresenting && <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         style={{
           position: 'fixed',
@@ -203,7 +277,10 @@ export default function App() {
         }}
       >
         <ChevronRight className="w-6 h-6 rotate-[-90deg]" />
-      </button>
+      </button>}
+
+      {/* Cố Vấn Thanh Liêm Chatbot */}
+      {!isPresenting && <IntegrityChatbot />}
     </div >
   );
 }

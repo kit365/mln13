@@ -1,0 +1,249 @@
+- generic [ref=e3]:
+  - button [ref=e21]:
+    - img [ref=e24]
+  - navigation [ref=e28]:
+    - generic [ref=e30]:
+      - generic [ref=e32]: DECODE1945
+      - button "Kho Tư Liệu" [ref=e34]:
+        - generic [ref=e36]: Kho Tư Liệu
+  - generic [ref=e38]:
+    - button "Mở Đầu" [ref=e39]:
+      - generic [ref=e40]: Mở Đầu
+    - button "Lời Đồn" [ref=e41]:
+      - generic [ref=e42]: Lời Đồn
+    - button "Khái Quát" [ref=e43]:
+      - generic [ref=e44]: Khái Quát
+    - button "Thời Cơ" [ref=e45]:
+      - generic [ref=e46]: Thời Cơ
+    - button "Tổng Kết" [ref=e47]:
+      - generic [ref=e48]: Tổng Kết
+  - main [ref=e49]:
+    - generic [ref=e51]:
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - heading "Tham nhũng không bắt đầu từ những vụ án lớn." [level=1] [ref=e61]
+          - paragraph [ref=e62]: Nó bắt đầu từ sự im lặng, từ những lần dễ dãi với cái sai, và từ khoảnh khắc chúng ta nghĩ rằng “chuyện đó không liên quan đến mình”.
+          - generic [ref=e63]:
+            - button "Bắt đầu trình chiếu" [ref=e64]:
+              - img [ref=e65]
+              - generic [ref=e68]: Bắt đầu trình chiếu
+            - generic [ref=e70]:
+              - img [ref=e71]
+              - generic [ref=e73]: Section kế tiếp
+        - generic [ref=e88]:
+          - img [ref=e89]
+          - generic [ref=e91]: Liêm chính
+      - generic [ref=e94]: Scroll
+    - generic [ref=e97]:
+      - generic: "01"
+      - generic [ref=e98]:
+        - generic [ref=e99]:
+          - generic [ref=e101]: Đặt Vấn Đề
+          - heading "Ăn May Hay Tất Yếu?" [level=2] [ref=e102]
+        - generic [ref=e103]:
+          - generic [ref=e104]:
+            - img "Tượng đài Chủ tịch Hồ Chí Minh" [ref=e106]
+            - generic [ref=e107]:
+              - generic [ref=e108]:
+                - img [ref=e109]
+                - img [ref=e111]
+                - img [ref=e113]
+              - text: Phân Tích Lịch Sử
+          - generic [ref=e115]:
+            - generic [ref=e116]:
+              - generic [ref=e117]: C
+              - text: ách mạng Tháng Tám năm 1945 là một trong những trang sử chói lọi nhất của dân tộc Việt Nam. Tuy nhiên, có một số quan điểm cho rằng sự kiện này thành công chỉ đơn thuần là do "sự ăn may" khi phát xít Nhật đầu hàng Đồng minh, tạo ra "khoảng trống quyền lực".
+            - generic [ref=e118]: Thực chất, cơ hội ngàn năm có một đó tuy là một yếu tố khách quan vô cùng thuận lợi, nhưng nếu không có sự lãnh đạo sáng suốt, chuẩn bị chu đáo và tinh thần chủ động chớp thời cơ của Đảng Cộng sản Đông Dương, cơ hội đó đã vụt mất vào tay các thế lực khác.
+            - generic [ref=e119]: Nhìn lại lịch sử 15 năm trước cuộc khởi nghĩa, chúng ta thấy rõ một quá trình chuẩn bị không mệt mỏi về đường lối lãnh đạo, phát triển lực lượng vũ trang và xây dựng căn cứ địa. Chiến thắng mùa Thu năm ấy là kết quả Tất Yếu của lòng yêu nước được tập hợp đúng lúc, đúng chỗ.
+            - generic [ref=e120]:
+              - paragraph [ref=e121]: Người lãnh đạo tối cao
+              - generic [ref=e122]: Hồ Chí Minh
+    - generic [ref=e124]:
+      - generic [ref=e125]:
+        - generic [ref=e126]: Dòng Chảy Lịch Sử
+        - heading "15 Năm & 15 Ngày" [level=2] [ref=e127]
+      - generic [ref=e128]:
+        - generic [ref=e129]:
+          - generic: GIAI ĐOẠN TÍCH LŨY
+          - generic [ref=e130] [cursor=pointer]: "1941"
+          - generic [ref=e131] [cursor=pointer]: "1941"
+          - generic [ref=e132] [cursor=pointer]: "1944"
+          - generic [ref=e133] [cursor=pointer]: "1945"
+          - generic [ref=e134] [cursor=pointer]: "1945"
+          - generic [ref=e135] [cursor=pointer]: "1945"
+          - generic [ref=e136] [cursor=pointer]: "1945"
+          - generic [ref=e137] [cursor=pointer]: "1945"
+          - generic [ref=e138] [cursor=pointer]: "1945"
+          - generic [ref=e139] [cursor=pointer]: "1945"
+          - generic [ref=e140] [cursor=pointer]: "1945"
+          - generic [ref=e141] [cursor=pointer]: "1945"
+          - generic [ref=e142] [cursor=pointer]: "1945"
+        - generic:
+          - generic:
+            - generic [ref=e143]: "1941"
+            - generic:
+              - img "Bác Hồ Về Nước" [ref=e144]
+              - generic [ref=e145]:
+                - generic [ref=e146]: 28/01 1941 | Pác Bó, Cao Bằng
+                - heading "Bác Hồ Về Nước" [level=2] [ref=e147]
+                - paragraph [ref=e149]: Lãnh tụ Nguyễn Ái Quốc về nước trực tiếp lãnh đạo cách mạng tại Pác Bó, Cao Bằng.
+    - generic [ref=e153]:
+      - generic [ref=e154]:
+        - generic [ref=e155]:
+          - img [ref=e156]
+          - generic [ref=e158]: THỜI CƠ NGÀN NĂM CÓ MỘT
+        - heading "15 Ngày Sinh Tử" [level=2] [ref=e159]
+        - paragraph [ref=e160]: Khoảng trống quyền lực chỉ xuất hiện trong tích tắc. Chậm một bước là rơi vào tay quân Anh - Tưởng, nhanh một bước là giành lại chủ quyền dân tộc.
+      - generic [ref=e161]:
+        - generic [ref=e162]:
+          - img [ref=e164]
+          - generic [ref=e166]:
+            - generic [ref=e167]:
+              - generic [ref=e168]: "14"
+              - generic [ref=e169]: Ngày
+            - generic [ref=e170]: ":"
+            - generic [ref=e171]:
+              - generic [ref=e172]: "23"
+              - generic [ref=e173]: Giờ
+            - generic [ref=e174]: ":"
+            - generic [ref=e175]:
+              - generic [ref=e176]: "59"
+              - generic [ref=e177]: Phút
+            - generic [ref=e178]: ":"
+            - generic [ref=e179]:
+              - generic [ref=e180]: "56"
+              - generic [ref=e181]: Giây
+          - generic [ref=e182]: Trước khi quân Đồng Minh tràn vào
+          - paragraph [ref=e183]: "\"Đêm 13/8/1945, ngay khi nhận tin Nhật đầu hàng...\""
+        - generic [ref=e184]:
+          - generic [ref=e185]:
+            - img [ref=e187]
+            - generic [ref=e189]:
+              - generic [ref=e190]: Tháng 3/1945
+              - heading "Nhật Đảo Chính Pháp" [level=4] [ref=e191]
+              - generic [ref=e192]: Chỉ thị "Nhật - pháp bắn nhau và hành động của chúng ta" ban hành ngay trong đêm, chớp thời cơ dọn đường cho Tổng khởi nghĩa.
+          - generic [ref=e193]:
+            - img [ref=e195]
+            - generic [ref=e198]:
+              - generic [ref=e199]: 13/08/1945
+              - heading "Quyết định Thần Tốc" [level=4] [ref=e200]
+              - generic [ref=e201]: Ủy ban Khởi nghĩa toàn quốc ra lệnh Tổng khởi nghĩa dù chưa có tin chính thức Nhật đầu hàng Đồng minh.
+          - generic [ref=e202]:
+            - img [ref=e204]
+            - generic [ref=e206]:
+              - generic [ref=e207]: 14/08 - 28/08/1945
+              - heading "Giành Chính Quyền" [level=4] [ref=e208]
+              - generic [ref=e209]: Chỉ trong 15 ngày, chính quyền từ tay phát xít Nhật và tay sai đã về tay nhân dân trên cả nước trước khi Anh - Tưởng kịp can thiệp.
+    - generic [ref=e212]:
+      - generic [ref=e215]: Tổng Kết Cơ Sở Lý Luận
+      - heading "Tất Yếu Của Lịch Sử" [level=2] [ref=e217]
+      - generic [ref=e218]:
+        - paragraph [ref=e219]:
+          - text: Nhận định
+          - strong [ref=e220]: "\"Cách mạng Tháng Tám chỉ là một cuộc ăn may của lịch sử\""
+          - text: là
+          - strong [ref=e221]: hoàn toàn phi khách quan và phủ nhận công sức của cả một dân tộc
+          - text: .
+        - paragraph [ref=e222]:
+          - text: Sự kiện Nhật đầu hàng Đồng minh đã tạo ra thời cơ khách quan vô cùng thuận lợi. Tuy nhiên, yếu tố quyết định là
+          - strong [ref=e223]: nhân tố chủ quan
+          - text: ": Sự lãnh đạo sáng suốt của Đảng, quá trình 15 năm chuẩn bị ròng rã, và tinh thần chủ động chớp thời cơ của toàn dân tộc."
+        - paragraph [ref=e225]: "\"May mắn chỉ mỉm cười với những bộ óc đã chuẩn bị sẵn sàng.\""
+      - generic [ref=e226]:
+        - heading "Góc Nhìn Gen Z" [level=3] [ref=e227]
+        - paragraph [ref=e228]: Từ bài học lịch sử của dân tộc, bạn rút ra được điều gì cho chính mình trong một thế giới đầy biến động ngày nay? Nếu ngày mai bạn nhận được một cơ hội lớn, bạn đã "chuẩn bị" được những gì?
+        - generic [ref=e229]:
+          - textbox "Nhập suy nghĩ của bạn..." [ref=e230]
+          - button "Gửi Phản Hồi" [ref=e231] [cursor=pointer]
+  - contentinfo [ref=e232]:
+    - generic [ref=e233]:
+      - generic [ref=e234]:
+        - generic [ref=e235]:
+          - generic [ref=e236]:
+            - img [ref=e238]
+            - heading "CM Tháng Tám" [level=3] [ref=e240]
+          - paragraph [ref=e241]: "Trang thông tin phân tích lịch sử, làm rõ luận điểm về nguyên nhân thắng lợi của Cách mạng Tháng Tám 1945: Một quá trình chủ động, tất yếu chứ không phải là sự ăn may."
+        - generic [ref=e242]:
+          - heading "Điều Hướng" [level=3] [ref=e243]
+          - list [ref=e244]:
+            - listitem [ref=e245]:
+              - link "Giới Thiệu" [ref=e246] [cursor=pointer]:
+                - /url: "#gioi-thieu"
+                - img [ref=e247]
+                - text: Giới Thiệu
+            - listitem [ref=e249]:
+              - link "Bối Cảnh" [ref=e250] [cursor=pointer]:
+                - /url: "#tu-tuong"
+                - img [ref=e251]
+                - text: Bối Cảnh
+            - listitem [ref=e253]:
+              - link "Khoảnh khắc" [ref=e254] [cursor=pointer]:
+                - /url: "#cam-hung"
+                - img [ref=e255]
+                - text: Khoảnh khắc
+            - listitem [ref=e257]:
+              - link "Dòng thời gian" [ref=e258] [cursor=pointer]:
+                - /url: "#lich-su"
+                - img [ref=e259]
+                - text: Dòng thời gian
+            - listitem [ref=e261]:
+              - link "Bảo tàng số" [ref=e262] [cursor=pointer]:
+                - /url: "#bao-tang-so"
+                - img [ref=e263]
+                - text: Bảo tàng số
+            - listitem [ref=e265]:
+              - link "Trắc nghiệm" [ref=e266] [cursor=pointer]:
+                - /url: "#trac-nghiem"
+                - img [ref=e267]
+                - text: Trắc nghiệm
+            - listitem [ref=e269]:
+              - link "Trích Dẫn" [ref=e270] [cursor=pointer]:
+                - /url: "#trich-dan"
+                - img [ref=e271]
+                - text: Trích Dẫn
+        - generic [ref=e273]:
+          - heading "Tư Liệu" [level=3] [ref=e274]
+          - list [ref=e275]:
+            - listitem [ref=e276]:
+              - link "Sách & Văn Kiện" [ref=e277] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e278]
+                - text: Sách & Văn Kiện
+            - listitem [ref=e280]:
+              - link "Thư Viện Ảnh" [ref=e281] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e282]
+                - text: Thư Viện Ảnh
+            - listitem [ref=e284]:
+              - link "Phim Tài Liệu" [ref=e285] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e286]
+                - text: Phim Tài Liệu
+            - listitem [ref=e288]:
+              - link "Bài Nghiên Cứu" [ref=e289] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e290]
+                - text: Bài Nghiên Cứu
+        - generic [ref=e292]:
+          - heading "Liên Hệ" [level=3] [ref=e293]
+          - list [ref=e294]:
+            - listitem [ref=e295]:
+              - img [ref=e296]
+              - generic [ref=e299]: Hồ Chí Minh, Việt Nam
+            - listitem [ref=e300]:
+              - img [ref=e301]
+              - generic [ref=e304]: lienhe@lichsudang.vn
+            - listitem [ref=e305]:
+              - img [ref=e306]
+              - generic [ref=e308]: (+84) 1900 1945
+      - generic [ref=e310]:
+        - paragraph [ref=e311]: © 2026 Di Sản Lịch Sử Việt Nam. Tự hào truyền thống dân tộc.
+        - generic [ref=e312]:
+          - link "Chính Sách" [ref=e313] [cursor=pointer]:
+            - /url: "#"
+          - link "Điều Khoản" [ref=e314] [cursor=pointer]:
+            - /url: "#"
+          - link "Bảo Mật" [ref=e315] [cursor=pointer]:
+            - /url: "#"
+  - button [ref=e316] [cursor=pointer]:
+    - img [ref=e317]
