@@ -4,8 +4,10 @@ import { motion, useScroll } from 'framer-motion';
 import { Hero } from './components/Hero';
 import { Introduction } from './components/Introduction';
 import { Timeline } from './components/Timeline';
+import { Consequences } from './components/Consequences';
 import { Footer } from './components/Footer';
 import { Conclusion } from './components/Conclusion';
+import { Responsibilities } from './components/Responsibilities';
 import { FloatingLotus } from './components/FloatingLotus';
 import { GoldenOpportunity } from './components/GoldenOpportunity';
 import { CustomCursor } from './components/CustomCursor';
@@ -68,16 +70,20 @@ export default function App() {
   const navItems = [
     { id: 'hero', label: 'Mở Đầu' },
     { id: 'gioi-thieu', label: 'Đặt Vấn Đề' },
+    { id: 'hau-qua', label: 'Hậu Quả' },
     { id: 'lich-su', label: 'Lịch Sử' },
     { id: 'thoi-co', label: 'Trận Tuyến' },
+    { id: 'trach-nhiem', label: 'Trách Nhiệm' },
     { id: 'ket-luan', label: 'Tổng Kết' },
   ];
 
   const presentationSlides = [
     <Hero isPresenting />,
     <Introduction />,
+    <Consequences />,
     <Timeline />,
     <GoldenOpportunity />,
+    <Responsibilities />,
     <Conclusion />,
   ];
 
@@ -240,8 +246,10 @@ export default function App() {
           <>
             <div id="hero"><Hero /></div>
             <div id="gioi-thieu"><Introduction /></div>
+            <div id="hau-qua"><Consequences /></div>
             <div id="lich-su"><Timeline /></div>
             <div id="thoi-co"><GoldenOpportunity /></div>
+            <div id="trach-nhiem"><Responsibilities /></div>
             <div id="ket-luan"><Conclusion /></div>
           </>
         )}

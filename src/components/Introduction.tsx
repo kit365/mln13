@@ -196,6 +196,9 @@ export function Introduction() {
                   className="w-full h-auto object-cover grayscale sepia-[0.1] contrast-110 aspect-[2/3] block shadow-inner"
                 />
               </div>
+              <div className="text-center mt-3 text-xs italic text-gray-500 font-medium">
+                Ảnh minh họa được tạo bởi Gemini AI
+              </div>
 
               <div className="mt-10 text-center">
                 <div className="flex items-center justify-center gap-3 text-[#C9A227] mb-3">

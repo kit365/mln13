@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { createPortal } from 'react-dom';
+import { Play, X } from 'lucide-react';
 
 // --- 1. IMPORT HÌNH ẢNH MINH HỌA MỚI (TƯ LIỆU ĐẠI ÁN) ---
 import tranduchauTrialImg from '../picture/tranduchau_trial.png';
@@ -26,6 +28,7 @@ interface TimelineEvent {
   sourceUrl?: string;
   imageCaption?: string;
   photoSourceUrl?: string;
+  videoUrl?: string;
 }
 
 const timelineEvents: TimelineEvent[] = [
@@ -41,8 +44,8 @@ const timelineEvents: TimelineEvent[] = [
     image: tranduchauTrialImg,
     layout: 'layout-split',
     stage: 'prep',
-    sourceUrl: 'https://vksnd.dongthap.gov.vn/chi-tiet-bai-viet/-/asset_publisher/1mOzUrGkrdAE/content/id/15859178',
-    imageCaption: 'Nguồn: vksnd.dongthap.gov.vn | Ảnh minh họa được tạo bởi Gemini AI'
+    imageCaption: 'Ảnh minh họa được tạo bởi Gemini AI',
+    videoUrl: 'https://www.youtube.com/embed/M57Qt34Ea0o'
   },
   {
     id: '1997-01',
@@ -56,7 +59,8 @@ const timelineEvents: TimelineEvent[] = [
     image: tamexcoTrialImg,
     layout: 'layout-split',
     stage: 'prep',
-    imageCaption: 'Ảnh minh họa được tạo bởi Gemini AI để minh họa'
+    imageCaption: 'Ảnh minh họa được tạo bởi Gemini AI để minh họa',
+    videoUrl: 'https://www.youtube.com/embed/-K5pB6PPX0c'
   },
   {
     id: '2012-12',
@@ -72,7 +76,8 @@ const timelineEvents: TimelineEvent[] = [
     stage: 'boom',
     sourceUrl: 'https://baochinhphu.vn/vu-vinalines-tu-hinh-duong-chi-dung-mai-van-phuc-102155669.htm',
     photoSourceUrl: 'https://tuoitre.vn/nhung-loi-khai-chan-dong-cua-duong-chi-dung-tai-toa-589099.htm',
-    imageCaption: 'Nguồn: baochinhphu.vn | Ảnh: tuoitre.vn'
+    imageCaption: 'Nguồn: baochinhphu.vn | Ảnh: tuoitre.vn',
+    videoUrl: 'https://www.youtube.com/embed/mcutkTPAp1Q'
   },
   {
     id: '2024-03',
@@ -88,7 +93,8 @@ const timelineEvents: TimelineEvent[] = [
     stage: 'boom',
     sourceUrl: 'https://baochinhphu.vn/toa-tuyen-tu-hinh-bi-cao-truong-my-lan-102240411172004704.htm',
     photoSourceUrl: 'https://dantri.com.vn/phap-luat/vu-an-epco-minh-phung-chiem-song-o-phien-toa-xet-xu-ba-truong-my-lan-20241118165610511.htm',
-    imageCaption: 'Nguồn: baochinhphu.vn | Ảnh: dantri.com.vn'
+    imageCaption: 'Nguồn: baochinhphu.vn | Ảnh: dantri.com.vn',
+    videoUrl: 'https://www.youtube.com/embed/fGgwiHhAC_o'
   },
   {
     id: '2017-12',
@@ -102,7 +108,8 @@ const timelineEvents: TimelineEvent[] = [
     image: lonongCampaignImg,
     layout: 'layout-hero',
     stage: 'boom',
-    imageCaption: 'Ảnh minh họa được tạo bởi Gemini AI để minh họa'
+    imageCaption: 'Ảnh minh họa được tạo bởi Gemini AI để minh họa',
+    videoUrl: 'https://www.youtube.com/embed/4fcDrIUtoPA'
   }
 ];
 
@@ -522,6 +529,65 @@ const TimelineStyles = () => (
       transform: translateY(0) !important;
     }
 
+    .play-btn-overlay {
+      position: absolute;
+      inset: 8px; /* account for 8px white border */
+      background: rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 10;
+    }
+    .play-btn-overlay:hover {
+      background: rgba(0,0,0,0.45);
+    }
+    .play-btn-overlay .play-icon-circle {
+      width: 70px;
+      height: 70px;
+      background: rgba(201, 162, 39, 0.9);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.3s ease;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+    }
+    .play-btn-overlay:hover .play-icon-circle {
+      transform: scale(1.15);
+      background: #8B2323;
+    }
+    
+    .hero-play-btn {
+      display: inline-flex;
+      align-items: center;
+      background: linear-gradient(135deg, #8B2323, #A52A2A);
+      color: white;
+      font-family: 'Manrope', sans-serif;
+      font-weight: 800;
+      font-size: 0.95rem;
+      padding: 14px 32px;
+      border-radius: 50px;
+      border: 1px solid rgba(255,255,255,0.2);
+      cursor: pointer;
+      box-shadow: 0 10px 30px rgba(139, 35, 35, 0.3);
+      transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    .slide.active .hero-play-btn {
+      opacity: 1;
+      transform: translateY(0);
+      transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1) 0.5s; /* Delay sau chữ */
+    }
+    .hero-play-btn:hover {
+      transform: translateY(-3px) scale(1.05) !important;
+      box-shadow: 0 15px 40px rgba(139, 35, 35, 0.5);
+    }
+
     @media (max-width: 768px) {
       .page-wrapper { min-height: 100vh; height: auto; overflow: visible; padding-bottom: 56px; }
       .header-section { padding: 56px 20px 24px; }
@@ -618,6 +684,7 @@ const TimelineStyles = () => (
 
 export function Timeline() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [activeVideo, setActiveVideo] = useState<string | null>(null);
   const currentEvent = timelineEvents[activeIndex];
 
   return (
@@ -658,18 +725,25 @@ export function Timeline() {
                     </>
                   ) : (
                     <div className="image-wrapper-vintage">
-                      <img src={event.image} className="visual-img" alt={event.title} />
+                      <div className="relative inline-block" style={{ width: 'fit-content' }}>
+                        <img src={event.image} className="visual-img" alt={event.title} />
+                        {event.videoUrl && (
+                          <div className="play-btn-overlay" onClick={() => setActiveVideo(event.videoUrl!)}>
+                            <div className="play-icon-circle">
+                              <Play size={34} fill="white" color="white" className="ml-2" />
+                            </div>
+                          </div>
+                        )}
+                      </div>
                       {event.imageCaption && (
                         <div className="image-caption-vintage">
                           {event.sourceUrl ? (
                             <>
                               Nguồn tài liệu: <a href={event.sourceUrl} target="_blank" rel="noopener noreferrer" className="caption-link">{new URL(event.sourceUrl).hostname}</a>
-                              {event.photoSourceUrl ? (
+                              {event.photoSourceUrl && (
                                 <>
                                   {' '} | Nguồn ảnh: <a href={event.photoSourceUrl} target="_blank" rel="noopener noreferrer" className="caption-link">{new URL(event.photoSourceUrl).hostname}</a>
                                 </>
-                              ) : (
-                                event.id === '1950-09' && ' | Ảnh minh họa được tạo bởi Gemini AI'
                               )}
                             </>
                           ) : (
@@ -688,6 +762,15 @@ export function Timeline() {
                       <p className="full-desc">{event.fullDesc}</p>
                       {event.significance && <p className="significance">{event.significance}</p>}
                     </div>
+                    {event.layout === 'layout-hero' && event.videoUrl && (
+                      <button 
+                        onClick={() => setActiveVideo(event.videoUrl!)}
+                        className="hero-play-btn"
+                      >
+                        <Play size={20} fill="white" className="mr-3" />
+                        Xem Thước Phim Lịch Sử
+                      </button>
+                    )}
                   </div>
                 </div>
               </div>
@@ -695,6 +778,85 @@ export function Timeline() {
           </div>
         </div>
       </div>
+
+      {/* Video Modal Popup (Sử dụng React Portal để thoát khỏi các giới hạn CSS) */}
+      {activeVideo && createPortal(
+        <div 
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            zIndex: 99999,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            backgroundColor: 'rgba(0,0,0,0.85)',
+            backdropFilter: 'blur(4px)',
+            padding: '20px'
+          }}
+          onClick={() => setActiveVideo(null)}
+        >
+          <div 
+            style={{
+              position: 'relative',
+              width: '100%',
+              maxWidth: '1000px',
+              backgroundColor: '#000',
+              borderRadius: '12px',
+              overflow: 'hidden',
+              boxShadow: '0 20px 60px rgba(0,0,0,0.6)',
+              border: '1px solid rgba(255,255,255,0.15)'
+            }}
+            onClick={e => e.stopPropagation()}
+          >
+            <button 
+              style={{
+                position: 'absolute',
+                top: '16px',
+                right: '16px',
+                color: 'white',
+                zIndex: 10,
+                background: 'rgba(0,0,0,0.6)',
+                border: 'none',
+                borderRadius: '50%',
+                padding: '8px',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                transition: 'all 0.3s'
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#8B2323'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgba(0,0,0,0.6)'}
+              onClick={() => setActiveVideo(null)}
+            >
+              <X size={24} />
+            </button>
+            
+            {/* Wrapper giữ tỷ lệ 16:9 hoàn hảo */}
+            <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+              <iframe 
+                src={`${activeVideo}?autoplay=1`} 
+                title="YouTube video player" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowFullScreen
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  height: '100%',
+                  border: 'none'
+                }}
+              ></iframe>
+            </div>
+          </div>
+        </div>,
+        document.body
+      )}
     </>
   );
 }
