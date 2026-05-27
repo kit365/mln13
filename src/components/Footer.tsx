@@ -17,6 +17,7 @@ const FooterStyles = () => (
       font-family: 'Manrope', sans-serif;
       overflow: hidden;
       border-top: 8px solid var(--footer-accent); /* Viền vàng trên cùng */
+      position: relative;
     }
 
     /* Pattern trang trí nền mờ */
@@ -53,6 +54,7 @@ const FooterStyles = () => (
       align-items: center;
       gap: 8px;
       color: rgba(244, 241, 234, 0.8);
+      text-decoration: none;
     }
 
     .footer-link:hover {
@@ -65,6 +67,93 @@ const FooterStyles = () => (
       border: 1px solid var(--footer-accent);
       color: var(--footer-accent);
     }
+
+    /* Guaranteed Custom Layout Styles */
+    .footer-container {
+      max-width: 1280px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 4rem 1.5rem;
+      position: relative;
+      z-index: 10;
+    }
+
+    @media (min-width: 640px) {
+      .footer-container {
+        padding: 4rem 2rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .footer-container {
+        padding: 4rem 3rem;
+      }
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    @media (min-width: 640px) {
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .footer-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.875rem;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(201, 162, 39, 0.3);
+      padding-top: 2rem;
+      margin-top: 2rem;
+    }
+
+    .footer-bottom-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      font-size: 0.875rem;
+      color: rgba(244, 241, 234, 0.6);
+    }
+
+    @media (min-width: 768px) {
+      .footer-bottom-content {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    .footer-bottom-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .footer-bottom-link {
+      color: rgba(244, 241, 234, 0.6);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-bottom-link:hover {
+      color: var(--footer-accent);
+    }
   `}</style>
 );
 
@@ -75,8 +164,8 @@ export function Footer() {
       <footer className="custom-footer">
         <div className="footer-pattern"></div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div className="footer-container">
+          <div className="footer-grid">
 
             {/* Cột 1: Brand & Intro */}
             <div>
@@ -96,7 +185,7 @@ export function Footer() {
             {/* Cột 2: Liên Kết */}
             <div>
               <h3 className="footer-col-title">Điều Hướng</h3>
-              <ul className="space-y-3">
+              <ul className="footer-list">
                 {[
                   { id: 'gioi-thieu', label: 'Giới Thiệu' },
                   { id: 'tu-tuong', label: 'Bối Cảnh' },
@@ -119,7 +208,7 @@ export function Footer() {
             {/* Cột 3: Tài Nguyên */}
             <div>
               <h3 className="footer-col-title">Tư Liệu</h3>
-              <ul className="space-y-3">
+              <ul className="footer-list">
                 {['Sách & Văn Kiện', 'Thư Viện Ảnh', 'Phim Tài Liệu', 'Bài Nghiên Cứu'].map((item) => (
                   <li key={item}>
                     <a href="#" className="footer-link">
@@ -134,7 +223,7 @@ export function Footer() {
             {/* Cột 4: Liên Hệ */}
             <div>
               <h3 className="footer-col-title">Liên Hệ</h3>
-              <ul className="space-y-4">
+              <ul className="footer-list">
                 <li className="flex items-start gap-3 text-white/80">
                   <MapPin className="w-5 h-5 text-[#C9A227] flex-shrink-0 mt-0.5" />
                   <span className="text-sm">Hồ Chí Minh, Việt Nam</span>
@@ -152,15 +241,15 @@ export function Footer() {
           </div>
 
           {/* Bottom Bar */}
-          <div className="border-t border-[#C9A227]/30 pt-8 mt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/60">
+          <div className="footer-bottom">
+            <div className="footer-bottom-content">
               <p className="text-center md:text-left font-light">
                 © 2026 Di Sản Lịch Sử Việt Nam. Tự hào truyền thống dân tộc.
               </p>
-              <div className="flex gap-6">
-                <a href="#" className="hover:text-[#C9A227] transition-colors">Chính Sách</a>
-                <a href="#" className="hover:text-[#C9A227] transition-colors">Điều Khoản</a>
-                <a href="#" className="hover:text-[#C9A227] transition-colors">Bảo Mật</a>
+              <div className="footer-bottom-links">
+                <a href="#" className="footer-bottom-link">Chính Sách</a>
+                <a href="#" className="footer-bottom-link">Điều Khoản</a>
+                <a href="#" className="footer-bottom-link">Bảo Mật</a>
               </div>
             </div>
           </div>

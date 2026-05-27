@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ChevronDown, ChevronRight, ChevronUp, Minimize2 } from 'lucide-react';
+import { ChevronDown, ChevronRight, ChevronUp, Minimize2, Trophy } from 'lucide-react';
 import { motion, useScroll } from 'framer-motion';
 import { Hero } from './components/Hero';
 import { Introduction } from './components/Introduction';
@@ -9,13 +9,13 @@ import { Conclusion } from './components/Conclusion';
 import { FloatingLotus } from './components/FloatingLotus';
 import { GoldenOpportunity } from './components/GoldenOpportunity';
 import { CustomCursor } from './components/CustomCursor';
-import { Archive } from './components/Archive';
+import { IntegrityQuiz } from './components/IntegrityQuiz';
 import { ImageGallery } from './components/ImageGallery';
 import { Soundscape } from './components/Soundscape';
 import { IntegrityChatbot } from './components/IntegrityChatbot';
 
 export default function App() {
-  const [showArchive, setShowArchive] = useState(false);
+  const [showQuiz, setShowQuiz] = useState(false);
   const [showGallery, setShowGallery] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
   const [isPresenting, setIsPresenting] = useState(false);
@@ -55,15 +55,7 @@ export default function App() {
     };
   }, []);
 
-  // Nếu đang xem Archive → render fullscreen
-  if (showArchive) {
-    return <Archive onClose={() => setShowArchive(false)} />;
-  }
 
-  // Nếu đang xem Gallery → render fullscreen
-  if (showGallery) {
-    return <ImageGallery onClose={() => setShowGallery(false)} />;
-  }
 
   const scrollToSection = (id: string, behavior: ScrollBehavior = 'smooth') => {
     const element = document.getElementById(id);
@@ -141,6 +133,16 @@ export default function App() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isPresenting]);
 
+  // Nếu đang xem Integrity Quiz → render fullscreen
+  if (showQuiz) {
+    return <IntegrityQuiz onClose={() => setShowQuiz(false)} />;
+  }
+
+  // Nếu đang xem Gallery → render fullscreen
+  if (showGallery) {
+    return <ImageGallery onClose={() => setShowGallery(false)} />;
+  }
+
   return (
     <div className="min-h-screen bg-[#F5F0E8] overflow-x-hidden">
       <motion.div
@@ -153,12 +155,12 @@ export default function App() {
       {!isPresenting && <FloatingLotus />}
       <Soundscape />
 
-      {/* Navigation */}
       {!isPresenting && <nav style={{
         position: 'fixed',
         top: 0,
         left: 0,
         right: 0,
+        width: '100vw',
         background: 'linear-gradient(180deg, rgba(45, 26, 26, 0.98) 0%, rgba(92, 34, 48, 0.95) 100%)',
         backdropFilter: 'blur(15px)',
         zIndex: 50,
@@ -176,12 +178,12 @@ export default function App() {
             {/* Nav Actions */}
             <div className="flex items-center gap-4 sm:gap-6">
               <button
-                onClick={() => setShowArchive(true)}
-                className="group relative px-6 py-3 rounded-md bg-white/10 hover:bg-white/20 border border-white/30 transition-all duration-300 outline-none flex items-center justify-center overflow-hidden"
+                onClick={() => setShowQuiz(true)}
+                className="group relative px-6 py-3 rounded-md bg-[#8B2323] hover:bg-[#A52A2A] border border-[#C9A227]/50 transition-all duration-300 outline-none flex items-center justify-center overflow-hidden shadow-[0_4px_15px_rgba(139,35,35,0.2)]"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:animate-[shimmer_1.5s_infinite]" />
-                <span className="relative z-10 text-[14px] sm:text-[15px] text-white tracking-[0.04em] uppercase font-bold transition-transform duration-300 group-hover:scale-105" style={{ fontFamily: "'Manrope', sans-serif" }}>
-                  Kho Tư Liệu
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:animate-[shimmer_1.5s_infinite]" />
+                <span className="relative z-10 text-[14px] sm:text-[15px] text-white tracking-[0.08em] uppercase font-bold transition-transform duration-300 group-hover:scale-105 flex items-center gap-2" style={{ fontFamily: "'Playfair Display', serif" }}>
+                  <Trophy size={16} color="#C9A227" fill="#C9A227" /> Đấu Trường Thanh Liêm
                 </span>
               </button>
             </div>

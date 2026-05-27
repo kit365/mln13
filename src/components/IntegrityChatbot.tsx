@@ -44,21 +44,55 @@ const lessonKnowledge: LessonDoc[] = [
     slideRef: 'Tiết 16 - Slide 5, 6'
   },
   {
-    id: 'nguyen-nhan-tham-nhung',
+    id: 'nguyen-nhan-chu-quan',
     category: 'nguyen_nhan',
-    keywords: ['nguyen nhan', 'chu quan', 'khach quan', 'suy thoai', 'long tham', 'ich ky', 'tai sao co tham nhung'],
-    title: 'Nguyên Nhân Dẫn Đến Tham Nhũng',
-    content: `Theo **Tiết 16 (Slide 7, 8 & 9)**, nguyên nhân của hành vi tham nhũng xuất phát từ:
-• **Nguyên nhân chủ quan**:
-  - Tổ chức, hoạt động, phân hóa chức năng của hệ thống chính trị nói chung còn nhiều khuyết điểm.
-  - Cơ chế, chính sách, pháp luật về phòng chống tham nhũng chưa hoàn thiện, chưa đủ mạnh hay hữu hiệu.
-  - Người đứng đầu các tổ chức chưa nhận thức đầy đủ, chưa đề cao trách nhiệm của mình.
-  - Công tác tuyên truyền PCTN vẫn mang tính phong trào.
-• **Nguyên nhân khách quan**:
-  - Tác động tiêu cực từ mặt trái của nền kinh tế thị trường, toàn cầu hóa và hội nhập quốc tế.
-  - Hệ thống chính sách, pháp luật thiếu đồng bộ, nhất quán; quản lý kinh tế - xã hội còn bất cập.
-  - Quản lý cán bộ, đảng viên, công chức, viên chức còn nhiều hạn chế.
-  - **Sự suy thoái về phẩm chất đạo đức**: Từ lòng tham, sự ích kỷ của người được giao quyền lực xã hội, lợi dụng quyền hạn để vụ lợi một cách bất hợp pháp.`,
+    keywords: ['nguyen nhan chu quan', 'chu quan', 'slide 7'],
+    title: 'Nguyên Nhân Chủ Quan Dẫn Đến Tham Nhũng',
+    content: `Theo **Tiết 16 (Slide 7)**, các nguyên nhân chủ quan bao gồm:
+• **Tổ chức, hoạt động, phân hóa chức năng** của hệ thống chính trị nói chung còn nhiều khuyết điểm.
+• **Cơ chế, chính sách, pháp luật** chưa hoàn thiện.
+• **Người đứng đầu các tổ chức** chưa nhận thức đầy đủ về tham nhũng.
+• **Chưa phân hóa rõ nhiệm vụ** của hệ thống cơ quan chuyên trách về phòng, chống tham nhũng.
+• **Pháp luật tham nhũng** chưa đủ mạnh, hữu hiệu.
+• **Công tác tuyên truyền** mang tính phong trào.`,
+    slideRef: 'Tiết 16 - Slide 7'
+  },
+  {
+    id: 'nguyen-nhan-khach-quan',
+    category: 'nguyen_nhan',
+    keywords: ['nguyen nhan khach quan', 'khach quan', 'slide 8', 'slide 9'],
+    title: 'Nguyên Nhân Khách Quan Dẫn Đến Tham Nhũng',
+    content: `Theo **Tiết 16 (Slide 8 & 9)**, các nguyên nhân khách quan bao gồm:
+• **Thứ nhất:** Tác động của mặt trái nền kinh tế thị trường và quá trình toàn cầu hóa, hội nhập quốc tế.
+• **Thứ hai:** Do hệ thống chính sách, pháp luật ở nước ta thiếu đồng bộ và nhất quán. Thể chế, chính sách về quản lý kinh tế - xã hội trên nhiều lĩnh vực vẫn còn bất cập.
+• **Thứ ba:** Công tác quản lý nhà nước trên một số lĩnh vực còn chưa chặt chẽ, hiệu quả.
+• **Thứ tư:** Công tác quản lý cán bộ, đảng viên, công chức, viên chức còn hạn chế.
+• **Thứ năm:** Công tác phòng chống tham nhũng (PCTN) đã được lãnh đạo, chỉ đạo quyết liệt, toàn diện đạt được kết quả quan trọng, song *“công tác PCTN tại một số địa phương, bộ, ngành chuyển biến chưa rõ rệt, trách nhiệm của người đứng đầu đối với công tác PCTN chưa được đề cao”*.
+• **Thứ sáu:** Sự suy thoái về phẩm chất và đạo đức của con người, từ lòng tham, sự ích kỷ của những người được coi là có quyền lực trong xã hội, họ đã lợi dụng quyền hạn của mình để vụ lợi một cách bất hợp pháp và không chính đáng.`,
+    slideRef: 'Tiết 16 - Slide 8, 9'
+  },
+  {
+    id: 'ca-hai-nguyen-nhan',
+    category: 'nguyen_nhan',
+    keywords: ['ca hai nguyen nhan', 'ca hai', 'xem ca hai nguyen nhan'],
+    title: 'Cả Hai Nhóm Nguyên Nhân Dẫn Đến Tham Nhũng',
+    content: `Theo tài liệu **Tiết 16 (Slide 7, 8 & 9)**:
+
+### 1. Nguyên nhân chủ quan (Slide 7)
+• **Tổ chức, hoạt động, phân hóa chức năng** của hệ thống chính trị nói chung còn nhiều khuyết điểm.
+• **Cơ chế, chính sách, pháp luật** chưa hoàn thiện.
+• **Người đứng đầu các tổ chức** chưa nhận thức đầy đủ về tham nhũng.
+• **Chưa phân hóa rõ nhiệm vụ** của hệ thống cơ quan chuyên trách về phòng, chống tham nhũng.
+• **Pháp luật tham nhũng** chưa đủ mạnh, hữu hiệu.
+• **Công tác tuyên truyền** mang tính phong trào.
+
+### 2. Nguyên nhân khách quan (Slide 8 & 9)
+• **Thứ nhất:** Tác động của mặt trái nền kinh tế thị trường và quá trình toàn cầu hóa, hội nhập quốc tế.
+• **Thứ hai:** Do hệ thống chính sách, pháp luật ở nước ta thiếu đồng bộ và nhất quán. Thể chế, chính sách về quản lý kinh tế - xã hội trên nhiều lĩnh vực vẫn còn bất cập.
+• **Thứ ba:** Công tác quản lý nhà nước trên một số lĩnh vực còn chưa chặt chẽ, hiệu quả.
+• **Thứ tư:** Công tác quản lý cán bộ, đảng viên, công chức, viên chức còn hạn chế.
+• **Thứ năm:** Công tác phòng chống tham nhũng (PCTN) đã được lãnh đạo, chỉ đạo quyết liệt, toàn diện đạt được kết quả quan trọng, song *“công tác PCTN tại một số địa phương, bộ, ngành chuyển biến chưa rõ rệt, trách nhiệm của người đứng đầu đối với công tác PCTN chưa được đề cao”*.
+• **Thứ sáu:** Sự suy thoái về phẩm chất và đạo đức của con người, từ lòng tham, sự ích kỷ của những người được coi là có quyền lực trong xã hội, họ đã lợi dụng quyền hạn của mình để vụ lợi một cách bất hợp pháp và không chính đáng.`,
     slideRef: 'Tiết 16 - Slide 7, 8, 9'
   },
   {
@@ -227,6 +261,8 @@ Tôi có thể giải đáp chi tiết tất cả các nội dung xoay quanh tà
 • **Tiết 16: Tác hại của tham nhũng**
 • **Tiết 17: Trách nhiệm của công dân**
 
+🌐 **[Tải Slide bài giảng chính thức tại đây!](https://drive.google.com/drive/folders/1QupRI2q9CcG8rycs1V7Hqd1iGvfzv1Q5)** ↗
+
 Bạn có thể tự gõ câu hỏi hoặc lựa chọn các gợi ý nhanh bên dưới nhé!`,
         suggestions: [
           'Khái niệm tham nhũng là gì?',
@@ -264,22 +300,23 @@ Bạn có thể tự gõ câu hỏi hoặc lựa chọn các gợi ý nhanh bên
     const cleanedQuery = removeVietnameseTones(queryText);
 
     // Xử lý các câu hỏi về danh tính, tên của Cố vấn hoặc lời chào trước tiên
-    const identityKeywords = [
-      'chao', 'xin chao', 'hello', 'hi', 'co van', 'la ai', 'ten la gi', 'ten ban', 'ten gi', 'ai do', 
-      'co van thanh liem', 'ban la ai', 'ban la gi', 'ban ten la gi', 'ban ten gi', 'tên gì', 'là ai', 'là gì'
-    ];
-    const isIdentityQuery = identityKeywords.some(kw => {
+    const greetingKeywords = ['chao', 'xin chao', 'hello', 'hi', 'ai do', 'chao ban'];
+    const isGreeting = greetingKeywords.some(kw => {
       const cleanedKw = removeVietnameseTones(kw);
       if (cleanedKw === 'hi') {
-        // Tránh trùng khớp với các từ như "hình", "chiến", "thiết"... bằng cách kiểm tra ranh giới từ
         return cleanedQuery === 'hi' || cleanedQuery.startsWith('hi ') || cleanedQuery.endsWith(' hi') || cleanedQuery.includes(' hi ');
       }
       if (cleanedKw === 'chao') {
-        // Tránh trùng khớp không mong muốn
         return cleanedQuery === 'chao' || cleanedQuery.startsWith('chao ') || cleanedQuery.endsWith(' chao') || cleanedQuery.includes(' chao ');
       }
       return cleanedQuery === cleanedKw || cleanedQuery.includes(cleanedKw);
     });
+
+    const isBotSubject = cleanedQuery.includes('ban') || cleanedQuery.includes('co van') || cleanedQuery.includes('tro ly') || cleanedQuery.includes('may');
+    const isIdentityQuestion = (cleanedQuery.includes('la ai') || cleanedQuery.includes('la gi') || cleanedQuery.includes('ten gi') || cleanedQuery.includes('ten la gi')) && isBotSubject;
+    const isDirectName = cleanedQuery.includes('co van thanh liem');
+
+    const isIdentityQuery = isGreeting || isIdentityQuestion || isDirectName;
 
     if (isIdentityQuery) {
       setTimeout(() => {
@@ -290,14 +327,38 @@ Bạn có thể tự gõ câu hỏi hoặc lựa chọn các gợi ý nhanh bên
           {
             id: 'bot-identity-' + Date.now(),
             sender: 'bot',
-            text: `Tôi là **Cố Vấn Thanh Liêm**, trợ lý ảo đồng hành học tập trực tuyến về nội dung phòng, chống tham nhũng (Tiết 16 & Tiết 17). 📜
-
-Tôi có thể giúp bạn tra cứu nhanh các khía cạnh chính luận như định nghĩa tham nhũng, các hành vi tham nhũng, nguyên nhân, tác hại đa chiều và trách nhiệm công dân. Hãy đặt câu hỏi hoặc chọn gợi ý bên dưới nhé!`,
+            text: `Tôi là **Cố Vấn Thanh Liêm**, trợ lý ảo đồng hành học tập trực tuyến về nội dung phòng, chống tham nhũng (Tiết 16 & Tiết 17). 📜\n\nTôi có thể giúp bạn tra cứu nhanh các khía cạnh chính luận như định nghĩa tham nhũng, các hành vi tham nhũng, nguyên nhân, tác hại đa chiều và trách nhiệm công dân. Hãy đặt câu hỏi hoặc chọn gợi ý bên dưới nhé!`,
             suggestions: [
               'Khái niệm tham nhũng là gì?',
               'Tham nhũng gồm các hành vi nào?',
               'Tác hại về đạo đức cách mạng?',
               'Nghĩa vụ tố cáo của công dân?'
+            ]
+          }
+        ]);
+      }, 1200);
+      return;
+    }
+
+    const isCauseQuery = cleanedQuery.includes('nguyen nhan') || cleanedQuery.includes('tai sao co tham nhung') || cleanedQuery.includes('ly do co tham nhung');
+    const isSpecificCause = cleanedQuery.includes('chu quan') || cleanedQuery.includes('khach quan') || cleanedQuery.includes('ca hai');
+
+    if (isCauseQuery && !isSpecificCause) {
+      setTimeout(() => {
+        playPaperRustle();
+        setIsTyping(false);
+        setMessages((prev) => [
+          ...prev,
+          {
+            id: 'bot-causes-prompt-' + Date.now(),
+            sender: 'bot',
+            text: `Đối với **Nguyên nhân dẫn đến tham nhũng (Tiết 16 - Slide 7, 8 & 9)**, tài liệu giảng dạy được phân chia rất chi tiết thành hai nhóm.
+
+Bạn muốn tìm hiểu về nhóm nguyên nhân nào dưới đây?`,
+            suggestions: [
+              'Nguyên nhân Chủ quan',
+              'Nguyên nhân Khách quan',
+              'Xem cả hai nguyên nhân'
             ]
           }
         ]);
@@ -383,6 +444,8 @@ Tôi đã sẵn sàng hỗ trợ bạn tra cứu về:
 • **Tiết 16: Tác hại của tham nhũng**
 • **Tiết 17: Trách nhiệm của công dân**
 
+🌐 **[Tải Slide bài giảng chính thức tại đây!](https://drive.google.com/drive/folders/1QupRI2q9CcG8rycs1V7Hqd1iGvfzv1Q5)** ↗
+
 Hãy để lại câu hỏi của bạn bên dưới!`,
         suggestions: [
           'Khái niệm tham nhũng là gì?',
@@ -401,10 +464,72 @@ Hãy để lại câu hỏi của bạn bên dưới!`,
     setIsOpen(!isOpen);
   };
 
-  const renderMessageText = (text: string) => {
+  const renderMessageText = (text: string, sender: 'user' | 'bot') => {
+    const parseLinks = (str: string): React.ReactNode[] => {
+      const parts: React.ReactNode[] = [];
+      const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+      let lastIndex = 0;
+      let match;
+      
+      while ((match = linkRegex.exec(str)) !== null) {
+        if (match.index > lastIndex) {
+          parts.push(str.substring(lastIndex, match.index));
+        }
+        parts.push(
+          <a
+            key={`link-${match.index}`}
+            href={match[2]}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: sender === 'user' ? '#FFE18A' : '#8B2323',
+              textDecoration: 'underline',
+              fontWeight: 'bold',
+              transition: 'opacity 0.2s'
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.opacity = '0.8'}
+            onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}
+          >
+            {match[1]}
+          </a>
+        );
+        lastIndex = linkRegex.lastIndex;
+      }
+      
+      if (lastIndex < str.length) {
+        parts.push(str.substring(lastIndex));
+      }
+      
+      return parts.length > 0 ? parts : [str];
+    };
+
+    const parseBold = (str: string): React.ReactNode[] => {
+      const parts: React.ReactNode[] = [];
+      const boldRegex = /\*\*([^*]+)\*\*/g;
+      let lastIndex = 0;
+      let match;
+      
+      while ((match = boldRegex.exec(str)) !== null) {
+        if (match.index > lastIndex) {
+          parts.push(...parseLinks(str.substring(lastIndex, match.index)));
+        }
+        parts.push(
+          <strong key={`bold-${match.index}`} style={{ color: sender === 'user' ? '#FFE18A' : '#8B2323', fontWeight: 'bold' }}>
+            {parseLinks(match[1])}
+          </strong>
+        );
+        lastIndex = boldRegex.lastIndex;
+      }
+      
+      if (lastIndex < str.length) {
+        parts.push(...parseLinks(str.substring(lastIndex)));
+      }
+      
+      return parts.length > 0 ? parts : [str];
+    };
+
     return text.split('\n').map((line, idx) => {
       let formatted = line;
-      const boldRegex = /\*\*(.*?)\*\*/g;
       
       if (formatted.startsWith('### ')) {
         return (
@@ -412,43 +537,23 @@ Hãy để lại câu hỏi của bạn bên dưới!`,
             key={idx}
             style={{
               fontFamily: "'Playfair Display', serif",
-              color: '#8B2323',
+              color: sender === 'user' ? '#FFE18A' : '#8B2323',
               fontSize: '16px',
               fontWeight: 'bold',
               marginTop: '8px',
               marginBottom: '12px',
-              borderBottom: '1px solid rgba(139, 35, 35, 0.15)',
+              borderBottom: sender === 'user' ? '1px solid rgba(255, 225, 138, 0.2)' : '1px solid rgba(139, 35, 35, 0.15)',
               paddingBottom: '4px'
             }}
           >
-            {formatted.replace('### ', '')}
+            {parseBold(formatted.replace('### ', ''))}
           </h4>
         );
       }
 
-      const parts = [];
-      let lastIndex = 0;
-      let match;
-      boldRegex.lastIndex = 0;
-      
-      while ((match = boldRegex.exec(formatted)) !== null) {
-        if (match.index > lastIndex) {
-          parts.push(formatted.substring(lastIndex, match.index));
-        }
-        parts.push(
-          <strong key={match.index} style={{ color: '#8B2323', fontWeight: 'bold' }}>
-            {match[1]}
-          </strong>
-        );
-        lastIndex = boldRegex.lastIndex;
-      }
-      if (lastIndex < formatted.length) {
-        parts.push(formatted.substring(lastIndex));
-      }
-
       return (
         <p key={idx} style={{ marginBottom: '8px', textAlign: 'justify', lineHeight: '1.6', margin: '0 0 8px 0' }}>
-          {parts.length > 0 ? parts : line}
+          {parseBold(formatted)}
         </p>
       );
     });
@@ -680,10 +785,13 @@ Hãy để lại câu hỏi của bạn bên dưới!`,
                     color: msg.sender === 'user' ? 'white' : '#2D1A1A'
                   }}
                 >
-                  {renderMessageText(msg.text)}
+                  {renderMessageText(msg.text, msg.sender)}
 
                   {msg.docRef && (
-                    <div
+                    <a
+                      href="https://drive.google.com/drive/folders/1QupRI2q9CcG8rycs1V7Hqd1iGvfzv1Q5"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       style={{
                         marginTop: '12px',
                         display: 'inline-flex',
@@ -695,12 +803,23 @@ Hãy để lại câu hỏi của bạn bên dưới!`,
                         backgroundColor: msg.sender === 'user' ? 'rgba(255,255,255,0.1)' : 'rgba(139,35,35,0.06)',
                         padding: '4px 8px',
                         borderRadius: '4px',
-                        border: msg.sender === 'user' ? '1px solid rgba(255,255,255,0.15)' : '1px solid rgba(139,35,35,0.12)'
+                        border: msg.sender === 'user' ? '1px solid rgba(255,255,255,0.15)' : '1px solid rgba(139,35,35,0.12)',
+                        textDecoration: 'none',
+                        transition: 'all 0.2s ease-in-out'
                       }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.opacity = '0.85';
+                        e.currentTarget.style.backgroundColor = msg.sender === 'user' ? 'rgba(255,255,255,0.15)' : 'rgba(139,35,35,0.1)';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.opacity = '1';
+                        e.currentTarget.style.backgroundColor = msg.sender === 'user' ? 'rgba(255,255,255,0.1)' : 'rgba(139,35,35,0.06)';
+                      }}
+                      title="Nhấn để tải Slide bài giảng chính thức"
                     >
                       <BookOpen style={{ height: '12px', width: '12px' }} />
-                      Nguồn bài giảng: {msg.docRef}
-                    </div>
+                      Nguồn bài giảng: {msg.docRef} ↗
+                    </a>
                   )}
 
                   {msg.significance && (
