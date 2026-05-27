@@ -73,20 +73,20 @@ const FooterStyles = () => (
       max-width: 1280px;
       margin-left: auto;
       margin-right: auto;
-      padding: 4rem 1.5rem;
+      padding: 4rem 1.5rem 1.5rem 1.5rem;
       position: relative;
       z-index: 10;
     }
 
     @media (min-width: 640px) {
       .footer-container {
-        padding: 4rem 2rem;
+        padding: 4rem 2rem 1.5rem 2rem;
       }
     }
 
     @media (min-width: 1024px) {
       .footer-container {
-        padding: 4rem 3rem;
+        padding: 4rem 3rem 1.5rem 3rem;
       }
     }
 
@@ -174,11 +174,11 @@ export function Footer() {
                   <Star className="w-6 h-6 fill-current" />
                 </div>
                 <h3 className="footer-brand-title text-2xl font-bold text-white">
-                  CM Tháng Tám
+                  Thanh Liêm & Chính Trực
                 </h3>
               </div>
               <p className="text-white/80 leading-relaxed font-light text-sm text-justify">
-                Trang thông tin phân tích lịch sử, làm rõ luận điểm về nguyên nhân thắng lợi của Cách mạng Tháng Tám 1945: Một quá trình chủ động, tất yếu chứ không phải là sự ăn may.
+                Trang thông tin học tập, phân tích và làm rõ các khía cạnh về phòng, chống tham nhũng. Giáo dục đạo đức cách mạng, nâng cao nhận thức và trách nhiệm của công dân theo nội dung Tiết 16 và Tiết 17.
               </p>
             </div>
 
@@ -187,13 +187,13 @@ export function Footer() {
               <h3 className="footer-col-title">Điều Hướng</h3>
               <ul className="footer-list">
                 {[
-                  { id: 'gioi-thieu', label: 'Giới Thiệu' },
-                  { id: 'tu-tuong', label: 'Bối Cảnh' },
-                  { id: 'cam-hung', label: 'Khoảnh khắc' },
-                  { id: 'lich-su', label: 'Dòng thời gian' },
-                  { id: 'bao-tang-so', label: 'Bảo tàng số' },
-                  { id: 'trac-nghiem', label: 'Trắc nghiệm' },
-                  { id: 'trich-dan', label: 'Trích Dẫn' }
+                  { id: 'hero', label: 'Mở Đầu' },
+                  { id: 'gioi-thieu', label: 'Đặt Vấn Đề' },
+                  { id: 'hau-qua', label: 'Hậu Quả' },
+                  { id: 'lich-su', label: 'Lịch Sử (Đại án)' },
+                  { id: 'thoi-co', label: 'Trận Tuyến' },
+                  { id: 'trach-nhiem', label: 'Trách Nhiệm' },
+                  { id: 'ket-luan', label: 'Tổng Kết' }
                 ].map((item) => (
                   <li key={item.id}>
                     <a href={`#${item.id}`} className="footer-link">
@@ -209,7 +209,7 @@ export function Footer() {
             <div>
               <h3 className="footer-col-title">Tư Liệu</h3>
               <ul className="footer-list">
-                {['Sách & Văn Kiện', 'Thư Viện Ảnh', 'Phim Tài Liệu', 'Bài Nghiên Cứu'].map((item) => (
+                {['Tài Liệu Tiết 16', 'Tài Liệu Tiết 17', 'Luật Phòng, Chống Tham Nhũng', 'Phóng Sự Thời Sự'].map((item) => (
                   <li key={item}>
                     <a href="#" className="footer-link">
                       <ArrowRight className="w-3 h-3 text-[#C9A227]" />
@@ -244,7 +244,7 @@ export function Footer() {
           <div className="footer-bottom">
             <div className="footer-bottom-content">
               <p className="text-center md:text-left font-light">
-                © 2026 Di Sản Lịch Sử Việt Nam. Tự hào truyền thống dân tộc.
+                © 2026 Dự án Học tập Lý luận Chính trị. Tự hào truyền thống liêm chính.
               </p>
               <div className="footer-bottom-links">
                 <a href="#" className="footer-bottom-link">Chính Sách</a>

@@ -177,7 +177,7 @@ export default function App() {
             {/* Logo */}
             <div className="flex items-center gap-6 shrink-0 cursor-pointer" onClick={() => scrollToSection('hero')}>
               <span className="text-xl text-white font-bold tracking-tighter text-historical">
-                DECODE<span className="text-gold-accent">1945</span>
+                DECODE<span className="text-gold-accent">: LIÊM CHÍNH</span>
               </span>
             </div>
 
