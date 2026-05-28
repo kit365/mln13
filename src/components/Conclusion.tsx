@@ -50,7 +50,7 @@ export function Conclusion() {
                     </div>
 
                     <p className="card-paragraph">
-                        Đối chiếu với bài học Tiết 17, <span className="highlight-span">Trách nhiệm của công dân</span> trong xã hội dân chủ không chỉ dừng lại ở việc chấp hành nghiêm chỉnh pháp luật. Mỗi người trẻ, mỗi sinh viên học tập lý luận chính trị cần nhận thức rõ quyền và nghĩa vụ của mình: chủ động phát hiện, báo tin khách quan, trung thực tố giác hành vi vụ lợi, và thực hiện quyền giám sát xã hội trực tiếp hoặc thông qua hoạt động của các *Ban thanh tra nhân dân* tại cơ sở. Liêm chính và trung thực phải được rèn luyện ngay từ giảng đường học đường.
+                        <span className="highlight-span">Trách nhiệm của công dân</span> trong xã hội dân chủ không chỉ dừng lại ở việc chấp hành nghiêm chỉnh pháp luật. Mỗi người trẻ, mỗi sinh viên học tập lý luận chính trị cần nhận thức rõ quyền và nghĩa vụ của mình: chủ động phát hiện, báo tin khách quan, trung thực tố giác hành vi vụ lợi, và thực hiện quyền giám sát xã hội trực tiếp hoặc thông qua hoạt động của các *Ban thanh tra nhân dân* tại cơ sở. Liêm chính và trung thực phải được rèn luyện ngay từ giảng đường học đường.
                     </p>
                 </div>
 
