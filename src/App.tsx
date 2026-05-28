@@ -5,6 +5,7 @@ import { Hero } from './components/Hero';
 import { Introduction } from './components/Introduction';
 import { Timeline } from './components/Timeline';
 import { Consequences } from './components/Consequences';
+import { CausesOfCorruption } from './components/CausesOfCorruption';
 import { Footer } from './components/Footer';
 import { Conclusion } from './components/Conclusion';
 import { Responsibilities } from './components/Responsibilities';
@@ -70,6 +71,7 @@ export default function App() {
   const navItems = [
     { id: 'hero', label: 'Mở Đầu' },
     { id: 'gioi-thieu', label: 'Đặt Vấn Đề' },
+    { id: 'nguyen-nhan', label: 'Nguyên Nhân' },
     { id: 'hau-qua', label: 'Hậu Quả' },
     { id: 'lich-su', label: 'Lịch Sử' },
     { id: 'thoi-co', label: 'Trận Tuyến' },
@@ -80,6 +82,7 @@ export default function App() {
   const presentationSlides = [
     <Hero isPresenting />,
     <Introduction />,
+    <CausesOfCorruption />,
     <Consequences />,
     <Timeline />,
     <GoldenOpportunity />,
@@ -246,6 +249,7 @@ export default function App() {
           <>
             <div id="hero"><Hero /></div>
             <div id="gioi-thieu"><Introduction /></div>
+            <div id="nguyen-nhan"><CausesOfCorruption /></div>
             <div id="hau-qua"><Consequences /></div>
             <div id="lich-su"><Timeline /></div>
             <div id="thoi-co"><GoldenOpportunity /></div>
